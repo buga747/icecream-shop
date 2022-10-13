@@ -1,0 +1,15 @@
+.mobile-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 32px;
+    width: 32px;
+
+    background-color: transparent;
+    margin-right: 32px;
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
