@@ -1,0 +1,30 @@
+.section-uppertitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    margin-bottom: 12px;
+
+    @include breakpoint-min($tablet) {
+        font-weight: 800;
+        font-size: 22px;
+    }
+
+    @include breakpoint-min($desktop) {
+
+        font-size: 30px;
+        line-height: 1.23;
+        letter-spacing: 0.04em;
+    }
+
+    &--light {
+        color: $primary-light-color;
+
+        @include breakpoint-min($tablet) {
+            letter-spacing: 0.04em;
+        }
+    }
+}

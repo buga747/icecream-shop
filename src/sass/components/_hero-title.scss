@@ -1,0 +1,38 @@
+.hero-title {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $primary-light-color;
+    margin-bottom: 32px;
+    width: 250px;
+
+    @include breakpoint-min($tablet) {
+        font-size: 18px;
+        line-height: 1.28;
+        margin-bottom: 21px;
+        width: 185px;
+    }
+
+    @include breakpoint-min($desktop) {
+
+        font-size: 38px;
+        line-height: 1.26;
+        letter-spacing: 0.04em;
+        margin-bottom: 28px;
+        width: 367px;
+    }
+
+    &--accent {
+        font-size: 34px;
+        line-height: 0.965;
+
+        @media screen and (min-width: 768px) and (max-width:1199px) {
+            font-size: 24px;
+            line-height: 0.55;
+        }
+    }
+}

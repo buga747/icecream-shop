@@ -1,0 +1,29 @@
+// міксини переходу
+@mixin transition($type) {
+    transition: $type $trans-dur $trans-t-funct;
+}
+
+@mixin transition-two($type-a, $type-b) {
+    transition: $type-a $trans-dur $trans-t-funct,
+        $type-b $trans-dur $trans-t-funct;
+}
+
+
+// міксини media breakpoint
+@mixin breakpoint-min($bp) {
+    @media screen and (min-width: $bp) {
+        @content;
+    }
+}
+
+@mixin breakpoint-max($bp) {
+    @media screen and (max-width: $bp) {
+        @content;
+    }
+}
+
+@mixin breakpoint-min-max($bp1, $bp2) {
+    @media screen and (min-width: $bp1) and (max-width: $bp2) {
+        @content;
+    }
+}
