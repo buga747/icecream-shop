@@ -11,11 +11,26 @@
       <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
     </ul>
 
-    <button class="buy-btn btn-background">
-      Buy now
-      <svg class="buy-btn__icon" width="12" height="12">
-        <use href="./images/icons/icons.svg#triangle"></use>
+    <button
+      class="mobile-btn js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg
+        class="burger-icon"
+        width="32"
+        height="32"
+        aria-label="Перемикач мобільного меню"
+      >
+        <use href="./images/icons/icons.svg#burger-menu"></use>
       </svg>
+
+      <button class="buy-btn btn-background">
+        Buy now
+        <svg class="buy-btn__icon" width="12" height="12">
+          <use href="./images/icons/icons.svg#triangle"></use>
+        </svg>
+      </button>
     </button>
   </div>
 </header>
