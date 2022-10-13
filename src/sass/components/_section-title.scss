@@ -1,0 +1,43 @@
+// dark text
+.section-title {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    margin-bottom: 40px;
+    max-width: 210px;
+
+
+    @include breakpoint-min($tablet) {
+        font-size: 34px;
+        margin-bottom: 80px;
+        max-width: unset;
+    }
+
+    @include breakpoint-min($desktop) {
+        font-size: 36px;
+        line-height: 1.25;
+        margin-bottom: 120px;
+        letter-spacing: 0.06em;
+    }
+
+    // light text
+    &--light {
+        color: $primary-light-color;
+        margin-bottom: 32px;
+
+        @include breakpoint-min($tablet) {
+            letter-spacing: 0.06em;
+            margin-bottom: 72px;
+        }
+
+        @include breakpoint-min($desktop) {
+            font-size: 36px;
+            margin-bottom: 82px;
+        }
+    }
+}

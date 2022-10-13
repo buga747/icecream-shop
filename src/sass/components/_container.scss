@@ -1,0 +1,20 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    outline: 1px solid tomato;
+
+    @include breakpoint-min($mobile) {
+        width: 480px;
+    }
+
+    @include breakpoint-min($tablet) {
+        width: 768px;
+        padding: 0 32px;
+    }
+
+    @include breakpoint-min($desktop) {
+        width: 1200px;
+        padding: 0 16px;
+    }
+}

@@ -1,0 +1,8 @@
+.nav{
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 27px;
+        }
+    }
