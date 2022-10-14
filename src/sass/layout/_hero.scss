@@ -1,0 +1,44 @@
+.hero {
+  background-color: $section-background-color;
+}
+.hero__container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 12px;
+  padding-bottom: 65px;
+}
+
+.hero__products {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  margin-bottom: 42px;
+}
+
+.hero__poducts-link {
+  text-decoration: underline;
+  font-weight: 600;
+  line-height: 1.21;
+
+  color: $accent-color;
+}
+
+.hero__products-pict {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.hero__products-text {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.hero__products-title {
+  font-weight: 400;
+  line-height: 1.4;
+
+  color: $primary-light-color;
+}
