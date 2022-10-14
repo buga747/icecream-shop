@@ -1,10 +1,5 @@
 .nav{
     display: none;
-    margin-right: 247px;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
 
     &__link {
         color: $primary-light-color;
@@ -16,11 +11,17 @@
             color: $accent-color;
         }
 
-        transition: $transition;
+        transition: color $transition;
     }
 
     @media screen and (min-width: 1200px) {
-    display: flex;
-    gap: 27px;
+        display: flex;
+        gap: 27px;
+        
+        margin-right: 247px;
+        
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
         }
     }
