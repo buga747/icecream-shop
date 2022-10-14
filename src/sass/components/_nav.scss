@@ -1,5 +1,23 @@
 .nav{
     display: none;
+    margin-right: 247px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+
+    &__link {
+        color: $primary-light-color;
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+
+        transition: $transition;
+    }
 
     @media screen and (min-width: 1200px) {
     display: flex;
