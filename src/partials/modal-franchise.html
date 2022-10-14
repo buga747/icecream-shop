@@ -1,0 +1,71 @@
+<!-- Modal window -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+    <button class="modal__button" type="button" data-modal-close>
+        <svg width="20" height="20">
+        <use href="./images/icons/icons.svg#close"></use>
+        </svg>
+    </button>
+
+    <form class="franchise-form" name="franchise-form">
+        <strong class="franchise-form__title">Thank you for your interest in owning an Ice Cream shop</strong>
+        <p class="franchise-form__subtitle"> 
+            Due to the overwhelming volume of franchise requests we are not 
+            accepting new franchisee applications at this time. Once the application process resumes, 
+            we will contact you for further information. Please fill out the contact information below 
+            and we will reach out for additional information. We appreciate your patience.
+        </p>
+        <div class="franchise-form_group" role="group">
+
+        <label class="franchise-form__field">
+            <span class="franchise-form__label"></span>
+            <input
+                class="franchise-form__input"
+                type="text"
+                name="user-name"
+                pattern="[A-Za-z ]{1,32}"
+                required
+                placeholder="Name"
+                />
+            </label>
+
+        <label class="franchise-form__field">
+            <span class="franchise-form__label"></span>
+        <input
+            class="franchise-form__input"
+            type="tel"
+            name="user-phone"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}"
+            required
+            placeholder="Phone"
+        />
+        </label>
+
+        <label class="franchise-form__field">
+            <span class="franchise-form__label"></span>
+            <input
+            class="Phone_input"
+            type="email"
+            name="user-mail"
+            pattern=".+@gmail\.com" 
+            required
+            placeholder="Email"
+            />
+        </label>
+
+        <label class="franchise-form__field">
+            <span class="franchise-form__heading"></span>
+            <textarea
+            class="franchise-form__comment"
+            name="user-comment"
+            pattern="[A-Za-z]{1,255}"
+            placeholder="Comment"
+            ></textarea>
+        </label>
+        </div>
+
+        <button class="franchise-form__btn btn" type="submit">Submit</button>
+
+    </form>
+    </div>
+</div>
