@@ -1,7 +1,19 @@
 <header class="header">
   <div class="container header__container">
     <a class="logo" href="./index.html">
-      <img class="logo__img" src="./images/logo/ice.png" alt=""
+      <img
+        class="logo__img"
+        srcset="
+          ./images/logo/tel-logo@1x.png      40w,
+          ./images/logo/tel-logo@2x.png      80w,
+          ./images/logo/tablet-logo@1x.png   48w,
+          ./images/logo/tablet-logo@2x.png   96w,
+          ./images/logo/desctop-logo@1x.png  60w,
+          ./images/logo/desctop-logo@2x.png 120w
+        "
+        sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 100px) 40px"
+        src="./images/logo/tel-logo@1x.png"
+        alt="Логотип"
     /></a>
 
     <ul class="nav">
