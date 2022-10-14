@@ -1,6 +1,5 @@
 .about-section {
   padding-top: 60px;
-  padding-bottom: 60px;
 
   text-align: center;
   background-color: $section-background-color;
@@ -8,15 +7,51 @@
 
 .about-uppertitle {
   color: $primary-light-color;
+
+  @include breakpoint-min($tablet) {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: calc(27 / 22);
+  }
+
+  @include breakpoint-min($desktop) {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+  }
 }
 
 .about-title {
   display: inline-block;
   color: $primary-light-color;
+  margin-bottom: 32px;
+
+  @include breakpoint-min($tablet) {
+    margin-bottom: 72px;
+    font-size: 34px;
+    line-height: calc(43 / 34);
+    letter-spacing: 0.06em;
+  }
+
+  @include breakpoint-min($desktop) {
+    margin-bottom: 82px;
+    font-size: 36px;
+    line-height: calc(45 / 36);
+  }
+}
+
+.about-group {
+  @include breakpoint-min($tablet) {
+    display: flex;
+    gap: 32px;
+  }
+
+  @include breakpoint-min($desktop) {
+    gap: 100px;
+  }
 }
 
 .about-thumb {
-  padding-top: 21px;
+  padding: 22px 1px 0 1px;
   margin: 0 auto 61px;
 
   width: 278px;
@@ -24,19 +59,76 @@
 
   background-color: $accent-color;
   border-radius: 140.182px;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+
+  @include breakpoint-min($tablet) {
+    margin-bottom: 26px;
+    padding: 23px 1px 0 1px;
+    width: 335px;
+    height: 330px;
+    border-radius: 165.879px;
+  }
+
+  @include breakpoint-min($desktop) {
+    margin: 0 0 28px 0;
+    padding: 39px 8px 0 2px;
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+  }
 }
 
 .about-info {
-  margin-bottom: 42px;
+  @include breakpoint-min($tablet) {
+    width: 336px;
+  }
+
+  @include breakpoint-min($desktop) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 463px;
+  }
 }
 
 .about-list {
   margin-bottom: 20px;
+
+  @include breakpoint-min($tablet) {
+    margin-bottom: 48px;
+  }
 }
 
 .about-item {
   &:not(:last-child) {
     margin-bottom: 4px;
+  }
+
+  &:last-child {
+    display: none;
+  }
+
+  @include breakpoint-min($tablet) {
+    &:last-child {
+      display: block;
+      width: 290px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    &:last-child .about-text {
+      line-height: 1.94;
+    }
+  }
+
+  @include breakpoint-min($desktop) {
+    &:last-child {
+      width: 457px;
+    }
+    &:first-child .about-text {
+      font-size: 16px;
+      line-height: 1.76;
+    }
   }
 }
 
@@ -48,6 +140,15 @@
   letter-spacing: 0.04em;
 
   color: $primary-light-color;
+
+  @include breakpoint-min($tablet) {
+    text-align: start;
+  }
+
+  @include breakpoint-min($desktop) {
+    font-size: 14px;
+    line-height: 1.94;
+  }
 }
 
 .about-btn {
@@ -58,6 +159,10 @@
   align-items: center;
   justify-content: center;
   padding: 12px 34px;
+
+  @include breakpoint-min($tablet) {
+    margin: 0 auto 0 0;
+  }
 }
 
 .about-icon {
@@ -65,54 +170,54 @@
   stroke: currentColor;
 }
 
-.about-stats-item {
-  &:not(:last-child) {
-    margin-bottom: 28px;
-  }
+// .about-stats-item {
+//   &:not(:last-child) {
+//     margin-bottom: 28px;
+//   }
 
-  &:hover .about-stats-icon-bg {
-    transform: scale(1.5) rotate(360deg);
-    background-color: $btn-hover-color;
-  }
-}
+//   &:hover .about-stats-icon-bg {
+//     transform: scale(1.5) rotate(360deg);
+//     background-color: $btn-hover-color;
+//   }
+// }
 
-.about-stats-icon-bg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 16px;
+// .about-stats-icon-bg {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 0 auto 16px;
 
-  width: 50px;
-  height: 50px;
+//   width: 50px;
+//   height: 50px;
 
-  transition: transform $transition, background-color $transition;
-  background-color: $accent-color;
-  fill: currentColor;
-  border-radius: 25px;
-}
+//   transition: transform $transition, background-color $transition;
+//   background-color: $accent-color;
+//   fill: currentColor;
+//   border-radius: 25px;
+// }
 
-.about-stats-title {
-  margin-bottom: 18px;
+// .about-stats-title {
+//   margin-bottom: 18px;
 
-  font-family: $third-font;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+//   font-family: $third-font;
+//   font-size: 36px;
+//   line-height: calc(42 / 36);
+//   text-align: center;
+//   letter-spacing: 0.04em;
+//   text-transform: uppercase;
 
-  color: $primary-light-color;
-}
+//   color: $primary-light-color;
+// }
 
-.about-stats-text {
-  margin: 0 auto;
+// .about-stats-text {
+//   margin: 0 auto;
 
-  width: 230px;
+//   width: 230px;
 
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.7;
-  text-align: center;
+//   font-size: 12px;
+//   font-weight: 700;
+//   line-height: 1.7;
+//   text-align: center;
 
-  color: $primary-light-color;
-}
+//   color: $primary-light-color;
+// }

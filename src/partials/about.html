@@ -18,16 +18,16 @@
           media="(min-width: 768px)" />
         <source
           srcset="
-            ././images/about/cow-desktop-1x.webp 1x,
-            ././images/about/cow-desktop-2x.webp 2x
+            ./images/about/cow-desktop-1x.webp 1x,
+            ./images/about/cow-desktop-2x.webp 2x
           "
           media="(min-width: 1200px)" />
         <img
           class="about-img"
           src="./images/about/cow-mobile-1x.webp"
           alt="Cow"
-          width="278"
-          height="278"
+          width="490"
+          height="490"
       /></picture>
     </div>
     <div class="about-info">
@@ -47,9 +47,18 @@
             15 types of coffee and 23 milkshakes.
           </p>
         </li>
+        <li class="about-item">
+          <p class="about-text">
+            This is enough to choose ice cream and coffee for any mood!
+          </p>
+        </li>
       </ul>
 
-      <button class="btn-background about-btn" type="button">
+      <button
+        class="btn-background about-btn"
+        type="button js-open-modal"
+        data-modal="about"
+      >
         Read more
         <svg class="about-icon" width="12" height="12">
           <use href="./images/icons/icons.svg#triangle"></use>
@@ -57,8 +66,8 @@
       </button>
     </div>
   </div>
-
-  <ul class="about-stats-list">
+</section>
+<!-- <ul class="about-stats-list">
     <li class="about-stats-item">
       <div class="about-stats-icon-bg">
         <svg class="about-stats-icon" width="36" height="36">
@@ -94,5 +103,4 @@
         Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
       </p>
     </li>
-  </ul>
-</section>
+  </ul> -->
