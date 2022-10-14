@@ -1,0 +1,36 @@
+<section class="hero">
+  <div class="container hero__container">
+    <h1 class="hero-title">
+      ice cream made with <span class="hero-title--accent">passion</span>
+    </h1>
+    <div class="hero__products">
+      <button class="hero__btn btn-border" type="button">Products</button>
+      <a class="hero__poducts-link" href="">How it’s made?</a>
+    </div>
+    <div class="hero__products-pict">
+      <img
+        class="hero__products-img"
+        srcset="
+          ./images/hero/more-lg@1x.png 225w,
+          ./images/hero/more-lg@2x.png 450w,
+          ./images/hero/more-md@1x.png 152w,
+          ./images/hero/more-md@2x.png 304w
+        "
+        sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw"
+        src="./images/hero/more-md@1x.png"
+        alt="A lot of ice cream"
+      />
+      <div class="hero__products-text-wrapper">
+        <p class="hero__products-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <a class="" href="">
+          <svg class="hero__arrow" width="40" height="10">
+            <use href="./images/icons/icons.svg#Arrow"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
