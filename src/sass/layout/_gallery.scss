@@ -1,3 +1,57 @@
 .gallery-reviews-wrapper {
-    margin: 0 auto;
+  margin: 0 auto;
+}
+@keyframes galleryAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  11.11% {
+    opacity: 1;
+  }
+
+  33.33% {
+    opacity: 1;
+  }
+
+  44.44% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.gallery {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery__img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+.gallery__item {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  opacity: 0;
+  animation-name: galleryAnimation;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+
+.gallery__item:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.gallery__item:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.gallery__item:nth-child(3) {
+  animation-delay: 6s;
 }
