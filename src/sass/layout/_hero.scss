@@ -5,10 +5,17 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  padding-top: 12px;
-  padding-bottom: 13px;
+
+  padding-top: 60px;
+  padding-bottom: 240px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 40px;
+    padding-bottom: 13px;
+  }
 
   @media screen and (min-width: 1200px) {
+    padding-top: 45px;
     padding-bottom: 65px;
   }
 }
@@ -17,7 +24,14 @@
   display: flex;
   align-items: center;
   gap: 34px;
-  margin-bottom: 42px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 28px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 42px;
+  }
 }
 
 .hero__poducts-link {
