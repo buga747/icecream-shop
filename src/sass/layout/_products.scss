@@ -9,6 +9,11 @@
     border: 2px solid $accent-color;
     border-radius: 10px;
   }
+  .modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   .modal__titel {
     font-family: 'Seymour One';
     font-style: normal;
