@@ -1,0 +1,25 @@
+@import '../utils/variables';
+
+@media screen and (max-width='480') {
+  .modal {
+    position: fixed;
+    width: 280px;
+    height: 990px;
+    background: $white-background-color;
+    border: 2px solid $accent-color;
+    border-radius: 10px;
+  }
+  .modal__titel {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #131313;
+  }
+}
