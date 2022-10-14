@@ -3,13 +3,32 @@
   <h2 class="section-title about-title">how it’s made?</h2>
   <div class="about-group">
     <div class="about-thumb">
-      <img
-        class="about-img"
-        src="./images/about/cow-mobile-x1.jpg"
-        alt="Cow"
-        width="278"
-        height="278"
-      />
+      <picture
+        ><source
+          srcset="
+            ./images/about/cow-mobile-1x.webp 1x,
+            ./images/about/cow-mobile-2x.webp 2x
+          "
+          media="(max-width: 767px)" />
+        <source
+          srcset="
+            ./images/about/cow-tablet-1x.webp 1x,
+            ./images/about/cow-tablet-2x.webp 2x
+          "
+          media="(min-width: 768px)" />
+        <source
+          srcset="
+            ././images/about/cow-desktop-1x.webp 1x,
+            ././images/about/cow-desktop-2x.webp 2x
+          "
+          media="(min-width: 1200px)" />
+        <img
+          class="about-img"
+          src="./images/about/cow-mobile-1x.webp"
+          alt="Cow"
+          width="278"
+          height="278"
+      /></picture>
     </div>
     <div class="about-info">
       <ul class="about-list">
@@ -77,29 +96,3 @@
     </li>
   </ul>
 </section>
-
-<!-- ABOUT MODAL -->
-
-<div class="about-backdrop visually-hidden">
-  <div class="about-modal">
-    <svg class="about-modal-close" width="16" height="16">
-      <use href="./images/icons/icons.svg#close"></use>
-    </svg>
-    <h3 class="about-modal-title">How it’s made?</h3>
-    <iframe
-      class="about-modal-video"
-      width="224"
-      height="199"
-      src="https://www.youtube.com/embed/damZVYCmCxQ"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
-    <p class="about-modal-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-    </p>
-  </div>
-</div>
