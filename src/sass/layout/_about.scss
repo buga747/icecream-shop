@@ -80,6 +80,9 @@
 
 .about-info {
   @include breakpoint-min($tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     width: 336px;
   }
 
