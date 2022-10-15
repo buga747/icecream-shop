@@ -1,3 +1,98 @@
+.gallery__list {
+  display: flex;
+  justify-content: center;
+}
 .gallery-reviews-wrapper {
-    margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 1047px;
+  position: relative;
+
+  // Mobile images
+  background-image: url(../images/gallery-bg/gallery-bg_sm-@1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/gallery-bg/gallery-bg_sm-@2x.png);
+  }
+
+  // Tablet images
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/gallery-bg/gallery-bg_md-@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/gallery-bg/gallery-bg_md-@2x.png);
+    }
+    min-height: 958px;
+  }
+
+  // Desktop images
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/gallery-bg/gallery-bg_lg-@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/gallery-bg/gallery-bg_lg-@2x.png);
+    }
+    min-height: 1020px;
+  }
+}
+
+@keyframes galleryAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  11.11% {
+    opacity: 1;
+  }
+
+  33.33% {
+    opacity: 1;
+  }
+
+  44.44% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.gallery__item {
+  position: absolute;
+  opacity: 0;
+  top: -24px;
+  border-radius: 25px;
+  overflow: hidden;
+
+  animation-name: galleryAnimation;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+
+  @media screen and (min-width: 768px) {
+    top: -164px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: -94px;
+  }
+}
+
+.gallery__item:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.gallery__item:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.gallery__item:nth-child(3) {
+  animation-delay: 6s;
 }
