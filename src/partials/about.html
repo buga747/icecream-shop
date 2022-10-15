@@ -7,10 +7,11 @@
         <picture
           ><source
             srcset="
-              ./images/about/cow-mobile-1x.webp 1x,
-              ./images/about/cow-mobile-2x.webp 2x
+              ./images/about/cow-desktop-1x.webp 1x,
+              ./images/about/cow-desktop-2x.webp 2x
             "
-            media="(max-width: 767px)" />
+            media="(min-width: 1200px)" />
+
           <source
             srcset="
               ./images/about/cow-tablet-1x.webp 1x,
@@ -19,10 +20,11 @@
             media="(min-width: 768px)" />
           <source
             srcset="
-              ./images/about/cow-desktop-1x.webp 1x,
-              ./images/about/cow-desktop-2x.webp 2x
+              ./images/about/cow-mobile-1x.webp 1x,
+              ./images/about/cow-mobile-2x.webp 2x
             "
-            media="(min-width: 1200px)" />
+            media="(max-width: 767px)" />
+
           <img
             class="about-img"
             src="./images/about/cow-mobile-1x.webp"
@@ -56,9 +58,9 @@
         </ul>
 
         <button
-          class="btn-background about-btn"
-          type="button js-open-modal"
-          data-modal="about"
+          class="btn-background about-btn js-open-modal"
+          type="button"
+          data-modal="about-modal"
         >
           Read more
           <svg class="about-icon" width="12" height="12">
