@@ -6,12 +6,95 @@
 
 <!-- Несколько модальных окон -->
 <div class="modal" data-modal="1">
-    < !-- Svg иконка для закрытия окна --><svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24">
+    < !-- Svg иконка для закрытия окна -->
+        <!-- <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path
                 d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
-        </svg>
-        <p class="modal__title">Заголовок окна 1</p>
+        </svg> -->
+        <h2 class="modal__title">Chololate icecream</h2>
+
+        <button type="button" class="modal-close" data-modal="close">
+            <svg class="modal-close-icon" width="20" height="20">
+                <use href="./images/icons/icons.svg#close"></use>
+            </svg>
+        </button>
+        <div>
+            <picture>
+                <!-- FOR MOBILE -->
+                <source media="(max-width=479)"
+                    srcset="./images/modal-product/ice-cream/isream-1x.jpg 1x ,./images/modal-product/ice-cream/isream-2x.jpg 2x" />
+                <!-- FOR TABLER -->
+                <source media="(min-width=480)"
+                    srcset="./images/modal-product/ice-cream/isream-1x.jpg 1x ,./images/modal-product/ice-cream/isream-2x.jpg 2x" />
+                <!-- FOR DESKTOP -->
+                <source media="(min-width=1200)"
+                    srcset="./images/modal-product/ice-cream/isream-1x.jpg 1x ,./images/modal-product/ice-cream/isream-3x.jpg 3x" />
+                <img class="picture" src="./images/modal-product/ice-cream/isream-1x.jpg" alt="Рожок мороженного">
+            </picture>
+
+        </div>
+
+        <ul class="energe-price">
+            <li class="m-e">
+                <p class="in-mass">320</p>
+                <h3 class="m-e-name">kcal</h3>
+            </li>
+            <li class="m-e">
+                <p class="in-mass">4g</p>
+                <h3 class="m-e-name">Prote</h3>
+            </li>
+            <li class="m-e">
+                <p class="in-mass">8.2g</p>
+                <h3 class="m-e-name">Fats</h3>
+            </li>
+            <li class="m-e">
+                <p class="in-mass">40.4g</p>
+                <h3 class="m-e-name">Carbs</h3>
+            </li>
+        </ul>
+
+        <!-- Ингридиенты -->
+
+        <table class="ingridiets">
+            <caption class="ingridients-title">Ingredients</caption>
+            <tr class="ingridient-cell">
+                <td class="ingridient-name">Milk</td>
+                <td class="ingridient-mass">100ml</td>
+            </tr>
+            <tr class="ingridient-cell">
+                <td class="ingridient-name">Belgian chocolate</td>
+                <td class="ingridient-mass">20g</td>
+            </tr>
+            <tr class="ingridient-cell">
+                <td class="ingridient-name">Cream</td>
+                <td class="ingridient-mass">150ml</td>
+            </tr>
+            <tr class="ingridient-cell">
+                <td class="ingridient-name">Cocoa powder</td>
+                <td class="ingridient-mass">30g</td>
+            </tr>
+            <tr class="ingridient-cell">
+                <td class="ingridient-name">Sugar</td>
+                <td class="ingridient-mass">40g</td>
+            </tr>
+            <tr class="ingridient-cell">
+                <td class="ingridient-name">Vanilla sugar</td>
+                <td class="ingridient-mass">10g</td>
+            </tr>
+
+        </table>
+
+        <!-- Данные клиента -->
+        <div class="clients-data">
+            <form>
+                <input type="text" name="Name" placeholder="Name" required minlength="2" />
+                <input type="text" name="Contact" placeholder="Phone" required minlength="5" />
+                <textarea name="Coments" placeholder="Comment" id="" cols="30" rows="10"></textarea>
+            </form>
+        </div>
+
+
+
 </div>
 <div class="modal" data-modal="2">
     < !-- Svg иконка для закрытия окна --><svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"
