@@ -46,7 +46,7 @@
 .hero__products-pict {
   display: flex;
   align-items: flex-end;
-
+  gap: 33px;
   @media screen and (min-width: 1200px) {
     gap: 14px;
   }
@@ -60,9 +60,11 @@
   display: flex;
   flex-direction: column;
   width: 151px;
+  padding-bottom: 10px;
 
   @media screen and (min-width: 1200px) {
     width: 200px;
+    padding-bottom: 40px;
   }
 
   @media screen and (max-width: 767px) {
@@ -73,14 +75,17 @@
 .hero__products-text {
   font-weight: 400;
   line-height: 1.4;
-  margin-bottom: 10px;
-
+  margin-bottom: 22px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   color: $primary-light-color;
+}
+
+.hero__link-arrow {
+  display: flex;
 }
 
 .hero__arrow {
