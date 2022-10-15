@@ -2,6 +2,7 @@
   background-color: $section-background-color;
 }
 .hero__container {
+  position: relative;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -44,8 +45,7 @@
 
 .hero__products-pict {
   display: flex;
-  align-items: center;
-  gap: 33px;
+  align-items: flex-end;
 
   @media screen and (min-width: 1200px) {
     gap: 14px;
@@ -73,11 +73,11 @@
 .hero__products-text {
   font-weight: 400;
   line-height: 1.4;
-  margin-bottom: 27px;
+  margin-bottom: 10px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   color: $primary-light-color;
@@ -85,4 +85,18 @@
 
 .hero__arrow {
   fill: $primary-light-color;
+}
+
+.hero__picture-ice {
+  position: absolute;
+  bottom: 0;
+  right: 93px;
+  z-index: 100;
+}
+
+.hero__points {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
 }
