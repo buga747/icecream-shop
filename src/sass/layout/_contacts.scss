@@ -1,0 +1,120 @@
+.contacts {
+    background-color: $section-background-color;
+    margin-right: auto;
+    margin-left: auto;
+    /*position: absolute;
+    top: 96px;*/
+}
+
+.contatcs-group-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    gap: 32px;
+}
+
+.contacts__information {
+    width: 368px;
+    height: auto;
+
+    padding: 40px;
+
+    background-color: $white-background-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+font-family: $main-font;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.86;
+
+letter-spacing: 0.04em;
+color: $primary-text-color;
+}
+
+.contacts__title {
+max-height: 28px;
+max-width: 75.1px;
+text-align: center;
+
+background-color: $accent-color;
+border-radius: 6px;
+
+margin-bottom: 32px;
+}
+
+.contacts__title--truck {
+max-width: 138px;
+max-height: 28px;
+text-align: center;
+
+background-color: $accent-color;
+/*not yellow color  in the background-color*/
+border-radius: 6px;
+
+margin-bottom: 32px;
+}
+
+.contacts-country__subtitle {
+    font-style: normal;
+
+    margin-bottom: 8px;
+}
+
+.contacts-link {
+line-height: 183%;
+/* or 29px */
+
+color: $product-3-bg-color;
+margin-bottom: 32px;
+}
+
+.contacts-link:hover {
+    text-decoration: underline;
+}
+
+.contacts__schedule {
+width: 288px;
+
+border-top: 1px solid #E1E1E1;
+border-bottom: 1px solid #E1E1E1;
+padding-top: 32px;
+padding-bottom: 32px;
+margin-bottom: 32px;
+}
+
+.contacts__time {
+    color: $btn-disabled-color;
+    margin-bottom: 12px;
+}
+
+.contacts__time:nth-child(4) {
+    margin-bottom: 0;
+}
+
+.contacts__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 196px;
+    height: 42px;
+    text-align: center;
+} 
+
+    .contacts__btn-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 64px;
+        padding-bottom: 120px;
+        gap: 16px;
+    }
+
+    .btn-icon {
+        margin-left: 6px;
+        fill: none;
+        stroke: currentColor;
+    }   
+
