@@ -90,13 +90,21 @@
 .hero__picture-ice {
   position: absolute;
   bottom: 0;
-  right: 93px;
   z-index: 100;
+
+  @media screen and (min-width: 768px) {
+    right: 93px;
+  }
+
+  @media screen and (max-width: 767px) {
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
 
-.hero__points {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-}
+// .hero__points {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   z-index: 10;
+// }
