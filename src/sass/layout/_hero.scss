@@ -94,12 +94,13 @@
 
 .hero__picture-ice {
   position: absolute;
+  right: 0;
   bottom: 0;
   z-index: 100;
 
-  @media screen and (min-width: 768px) {
-    right: 93px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   right: 0;
+  // }
 
   @media screen and (max-width: 767px) {
     right: 50%;
