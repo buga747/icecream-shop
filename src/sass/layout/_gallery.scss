@@ -38,7 +38,7 @@ ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  //   margin-top: 300px;
+  min-height: 1047px;
   position: relative;
 
   // Mobile images
@@ -59,6 +59,7 @@ ul {
       (min-resolution: 2dppx) {
       background-image: url(../images/gallery-bg/gallery-bg_md-@2x.png);
     }
+    min-height: 958px;
   }
 
   // Desktop images
@@ -70,6 +71,7 @@ ul {
       (min-resolution: 2dppx) {
       background-image: url(../images/gallery-bg/gallery-bg_lg-@2x.png);
     }
+    min-height: 1020px;
   }
 }
 
