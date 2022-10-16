@@ -98,9 +98,9 @@
   bottom: 0;
   z-index: 100;
 
-  // @media screen and (min-width: 768px) {
-  //   right: 0;
-  // }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    right: 16px;
+  }
 
   @media screen and (max-width: 767px) {
     right: 50%;
@@ -114,3 +114,83 @@
 //   left: 0;
 //   z-index: 10;
 // }
+
+.hero__amount16 {
+  width: 32px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: absolute;
+  top: 12px;
+  right: 32px;
+  z-index: 1000;
+
+  @media screen and (min-width: 1200px) {
+    width: 52px;
+    height: 77px;
+    top: 52px;
+    right: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero/16-md@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/16-md@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/hero/16-lg@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/16-lg@2x.png);
+    }
+  }
+}
+
+.hero__amount23 {
+  width: 46px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: absolute;
+  top: 72px;
+  right: 32px;
+  z-index: 1000;
+
+  @media screen and (min-width: 1200px) {
+    width: 79px;
+    height: 77px;
+    top: 148px;
+    right: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero/23-md@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/23-md@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/hero/23-lg@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/23-lg@2x.png);
+    }
+  }
+}
