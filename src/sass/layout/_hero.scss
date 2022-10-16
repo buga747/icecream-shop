@@ -24,7 +24,8 @@
 .hero__products {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 20px;
+  z-index: 2000;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-bottom: 28px;
@@ -32,15 +33,21 @@
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 42px;
+    gap: 34px;
   }
 }
 
 .hero__poducts-link {
   text-decoration: underline;
+  font-size: 8px;
   font-weight: 600;
   line-height: 1.21;
 
   color: $accent-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .hero__products-pict {
