@@ -328,6 +328,7 @@
   }
   .ingridiets {
     border: 1px solid #fff;
+    border-radius: 4px;
     width: 100%;
     margin-top: 39px;
   }
@@ -345,9 +346,9 @@
     transition: transform 500ms linear;
     // transition-property: scale;
   }
-  .ingridient-cell {
-    border-radius: 4px;
-  }
+  //   .ingridient-cell {
+  //     border-radius: 4px;
+  //   }
   .ingridient-cell:hover,
   .ingridient-cell:focus {
     transform: scale(1.1);
