@@ -252,6 +252,10 @@
     margin-top: 22px;
     margin-left: auto;
     margin-right: auto;
+    transition: scale 400ms linear;
+  }
+  .picture:hover {
+    scale: 1.4;
   }
 
   // ЭНЕРГЕТИЧЕСКАЯ ЦЕННОСТЬ
@@ -271,7 +275,7 @@
     height: 72px;
     border: 2px solid #9cbe8f;
     border-radius: 40px;
-    transition: transform 300ms linear, scale 300ms linear;
+    transition: transform 400ms linear, scale 300ms linear;
   }
   .m-e:hover,
   .m-e:focus {
@@ -327,6 +331,7 @@
     margin-bottom: 11px;
   }
   .ingridiets {
+    display: inline-table;
     border: 1px solid #fff;
     border-radius: 4px;
     width: 100%;
@@ -346,13 +351,12 @@
     transition: transform 500ms linear;
     // transition-property: scale;
   }
-  //   .ingridient-cell {
-  //     border-radius: 4px;
-  //   }
-  .ingridient-cell:hover,
-  .ingridient-cell:focus {
+
+  .ingridient-cell:hover .hover-color,
+  .ingridient-cell:focus .focus-color {
     transform: scale(1.1);
-    background: #9cbe8f;
+    background: rgba(10, 136, 23, 0.25);
+    color: rgb(243, 61, 55);
     border-radius: 4px;
   }
 
