@@ -108,6 +108,11 @@
 
 .hero__link-arrow {
   display: flex;
+  width: 40px;
+
+  &:focus {
+    transform: scale(1.25, 1.5);
+  }
 }
 
 .hero__arrow {
