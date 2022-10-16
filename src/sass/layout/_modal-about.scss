@@ -11,22 +11,21 @@
 // }
 
 .about-modal {
-  padding: 28px;
+  // padding: 28px;
+  // height: auto;
+
+  // position: fixed;
+  // top: 50%;
+  // left: 50%;
+
+  // transform: translate(-50%, -50%) scale(1);
+
+  // text-align: center;
+  // background: $primary-light-color;
+  // border: 2px solid $btn-main-color;
+  // border-radius: 10px;
 
   width: 280px;
-  height: auto;
-
-  position: fixed;
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%) scale(1);
-
-  text-align: center;
-  background: $primary-light-color;
-  border: 2px solid $btn-main-color;
-  border-radius: 10px;
-
   @include breakpoint-min(768px) {
     padding: 32px 60px;
     width: 568px;
@@ -42,7 +41,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: $white-background-color;
+  background-color: transparent;
   cursor: pointer;
   transition: fill $transition, transform $transition;
 
