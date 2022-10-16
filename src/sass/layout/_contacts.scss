@@ -2,119 +2,212 @@
     background-color: $section-background-color;
     margin-right: auto;
     margin-left: auto;
+    
     /*position: absolute;
     top: 96px;*/
-}
 
-.contatcs-group-container {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
+    &-group {
 
-    gap: 32px;
-}
-
-.contacts__information {
-    width: 368px;
-    height: auto;
-
-    padding: 40px;
-
-    background-color: $white-background-color;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-
-font-family: $main-font;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.86;
-
-letter-spacing: 0.04em;
-color: $primary-text-color;
-}
-
-.contacts__title {
-max-height: 28px;
-max-width: 75.1px;
-text-align: center;
-
-background-color: $accent-color;
-border-radius: 6px;
-
-margin-bottom: 32px;
-}
-
-.contacts__title--truck {
-max-width: 138px;
-max-height: 28px;
-text-align: center;
-
-background-color: $accent-color;
-/*not yellow color  in the background-color*/
-border-radius: 6px;
-
-margin-bottom: 32px;
-}
-
-.contacts-country__subtitle {
-    font-style: normal;
-
-    margin-bottom: 8px;
-}
-
-.contacts-link {
-line-height: 183%;
-/* or 29px */
-
-color: $product-3-bg-color;
-margin-bottom: 32px;
-}
-
-.contacts-link:hover {
-    text-decoration: underline;
-}
-
-.contacts__schedule {
-width: 288px;
-
-border-top: 1px solid #E1E1E1;
-border-bottom: 1px solid #E1E1E1;
-padding-top: 32px;
-padding-bottom: 32px;
-margin-bottom: 32px;
-}
-
-.contacts__time {
-    color: $btn-disabled-color;
-    margin-bottom: 12px;
-}
-
-.contacts__time:nth-child(4) {
-    margin-bottom: 0;
-}
-
-.contacts__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 196px;
-    height: 42px;
-    text-align: center;
-} 
-
-    .contacts__btn-wrapper {
-        display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+    
+        @include breakpoint-min($tablet) {
+            display: flex;
+            align-items: baseline;
+            gap: 16px;
+        }
+        
+        @include breakpoint-min($desktop) {
+            gap: 32px;
+        }
+    }
+    
+    &__information {
+        width: 280px;
+        height: auto;
+        padding: 40px 32px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    
+        background-color: $white-background-color;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        
+        letter-spacing: 0.04em;
+        color: $primary-text-color;
+    
+        margin-bottom: 20px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+        @include breakpoint-min($tablet) {
+            width: 224px;
+            font-size: 14px;
+            padding: 40px 24px;
+        }
+        
+        @include breakpoint-min($desktop) {
+            width: 368px;
+            padding: 40px;
+            font-size: 16px;
+    }
+    }
+    
+    &__title {
+        max-height: auto;
+        width: 80px;
         text-align: center;
-        margin-top: 64px;
-        padding-bottom: 120px;
-        gap: 16px;
+        
+        background-color: $accent-color;
+        border-radius: 6px;
+        
+        margin-bottom: 20px;
+    
+        @include breakpoint-min($tablet) {
+            width: 73px;
+            margin-bottom: 32px;
+        }
+    }
+        
+        &__title--truck {
+            width: 130px;
+            max-height: auto;
+            text-align: center;
+            
+            background-color: $accent-color;
+            border-radius: 6px;
+            margin-bottom: 20px;
+    
+            @include breakpoint-min($tablet) {
+                width: 138px;
+                margin-bottom: 32px;
+            }
+            }
+    
+    
+            &-country__subtitle {
+                font-style: normal;
+                margin-bottom: 8px;
+    
+            @include breakpoint-min($tablet) {
+                    margin-bottom: 12px;
+            }
+    
+            @include breakpoint-min($desktop) {
+                margin-bottom: 8px;
+        }
+    }
+    
+    &-link {
+        line-height: 1.83;
+        
+        color: $product-3-bg-color;
+        margin-bottom: 24px;
+    
+        @include breakpoint-min($tablet) {
+            margin-bottom: 32px;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+        }
+    
+        
+        &__schedule {
+            border-top: 1px solid #E1E1E1;
+            border-bottom: 1px solid #E1E1E1;
+            width: 216px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+            
+            @include breakpoint-min($tablet) {
+                width: 176px;
+                padding-top: 32px;
+                padding-bottom: 32px;
+                margin-bottom: 32px;
+            }
+    
+            @include breakpoint-min($desktop) {
+            width: 288px;
+            }
+        }
+    
+        &__time {
+            color: $btn-disabled-color;
+            margin-bottom: 8px;
+    
+            @include breakpoint-min($tablet) {
+                margin-bottom: 12px;
+            }
+
+            &:nth-child(4) {
+                margin-bottom: 0;
+            }
+        }
     }
 
-    .btn-icon {
-        margin-left: 6px;
-        fill: none;
-        stroke: currentColor;
-    }   
+        
+    .contacts-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 196px;
+            min-height: 42px;
+            text-align: center;
+            font-size: 14px;
+    
+                margin-bottom: 16px;
+                margin-left: auto;
+                margin-right: auto;
+    
+    
+                .contacts-btn:last-child {
+                    margin-bottom: 0;
+                }
+    
+            @include breakpoint-min($tablet) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        } 
+    
+        .contacts-btn__wrapper {
+            display: block;
+            margin-top: 32px;
+            padding-bottom: 39px;
+    
+    
+            @include breakpoint-min($tablet) {
+                display: flex;
+                margin-top: 60px;
+                padding-bottom: 40px;
+                gap: 16px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            
+            }
+    
+            @include breakpoint-min($desktop) {
+                margin-top: 64px;
+                padding-bottom: 120px;
+            }
+        }
+
+        .btn-icon {
+            margin-left: 6px;
+            fill: none;
+            stroke: currentColor;
+        }   
+
+
 
