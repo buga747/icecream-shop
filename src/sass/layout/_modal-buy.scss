@@ -1,0 +1,198 @@
+.modal-buy{
+
+    // icon
+    &__close{    
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    
+        background: none;
+
+        @media screen and (min-width: $tablet) {
+            top: 20px;
+            right: 20px;   
+        }
+    }
+ 
+    &__close-icon{
+        fill: $primary-text-color;
+        cursor: pointer;
+
+        @media screen and (min-width: $tablet) {
+            scale: 1.25;
+        }
+    }
+
+    // title
+
+    &__title{
+        font-family: 'Seymour One';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $primary-text-color;
+        margin-bottom: 85px;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 20px;
+            line-height: 1.4;
+            margin-bottom: 103px;
+        }
+    }
+    &__subtitle{
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.04em;  
+        text-transform: uppercase;
+    }
+
+
+    &__thumb{
+        position: relative;
+        cursor: pointer;
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        padding-bottom: 20px;
+
+        width: 132px;
+        height: 135px;
+        border: 2px solid;
+        filter: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+        border-radius: 16px;
+    }
+
+    // &__checkbox{
+    //     display: none;
+    // }
+    
+    &__checkbox:checked + .modal-buy__ice-cream {
+        background-color: #96AF8C;
+    }
+
+    &__checkbox:checked + .modal-buy__ice-coffee {
+        background-color: #EFD478;
+    }
+
+    &__checkbox:checked + .modal-buy__milkshake {
+        background-color: #D6936D;
+    }
+
+
+    &__img{
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+        scale: 1.35;
+    }
+
+    &__ice-cream{
+        border-color: #96AF8C;
+        box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    }
+
+    &__ice-coffee{
+        border-color: #EFD478;
+        box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    }    
+
+    &__milkshake{
+        border-color: #D6936D;
+        box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 85px;
+
+        padding-bottom: 24px;
+
+        @media screen and (min-width: $tablet) {
+            flex-direction: row;
+            gap: 32px;
+
+            padding-bottom: 40px;
+        }
+    }
+
+    input{
+        width: 100%;
+        max-width: 224px;
+        height: 32px;
+
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.4;
+        color: #131313;
+
+        background: rgba(248, 210, 78, 0.1);
+        border: 1px solid #84A178;
+        border-radius: 10px;
+
+        @media screen and (min-width: $tablet) {
+            max-width: 368px;   
+        }
+    }
+
+    &__username{
+        margin-bottom: 12px;
+
+        @media screen and (min-width: $tablet) {
+          margin-bottom: 16px;  
+        }
+    }
+
+    &__tel{
+    margin-bottom: 12px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 16px;  
+    }
+    }
+
+    &__textarea{
+        display: block;
+
+        height: 65px;
+        width: 100%;
+        max-width: 224px;        
+        
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        margin-bottom: 24px;
+        margin-right: auto;
+        margin-left: auto;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.4;
+        color: #131313;
+
+        background: rgba(248, 210, 78, 0.1);
+        border: 1px solid #84A178;
+        border-radius: 10px;
+
+        resize:none;
+
+        @media screen and (min-width: $tablet) {
+            max-width: 368px;  
+            margin-bottom: 32px;
+        }
+    }
+}
+
+
