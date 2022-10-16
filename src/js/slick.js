@@ -5,6 +5,6 @@ $('.slick-js').slick({
   speed: 300,
   slidesToShow: 1,
   adaptiveHeight: true,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
 });
