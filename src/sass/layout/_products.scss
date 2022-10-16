@@ -261,7 +261,15 @@
     height: 72px;
     border: 2px solid #9cbe8f;
     border-radius: 40px;
+    transition: transform 300ms linear, scale 300ms linear;
   }
+  .m-e:hover,
+  .m-e:focus {
+    transform: rotate(360deg);
+    // transform: scale(1.17);
+    scale: 1.7;
+  }
+
   .in-mass {
     font-family: 'Montserrat';
     font-style: normal;
@@ -322,9 +330,16 @@
     align-items: center;
     text-align: start;
     letter-spacing: 0.04em;
-
     color: $primary-text-color;
+    transition: transform 500ms linear;
+    // transition-property: scale;
   }
+  .ingridient-cell:hover,
+  .ingridient-cell:focus {
+    transform: scale(1.1);
+    background: #9cbe8f;
+  }
+
   .ingridient-mass {
     font-family: 'Montserrat';
     font-style: normal;
