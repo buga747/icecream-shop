@@ -145,6 +145,11 @@
     height: 42px;
     width: 100%;
     padding: 11px 11px;
+    transition: scale 300ms linear;
+  }
+  .cliets-data-field:hover,
+  .cliets-data-field:focus {
+    scale: 1.15;
   }
   .text-area-field {
     background: rgba(248, 210, 78, 0.1);
@@ -155,6 +160,11 @@
     margin-top: 16px;
     resize: none;
     padding: 11px 11px;
+    transition: scale 300ms linear;
+  }
+  .text-area-field:hover,
+  .text-area-field:focus {
+    scale: 1.15;
   }
   .text-area-field::placeholder {
     font-family: 'Montserrat';
@@ -317,6 +327,7 @@
     margin-bottom: 11px;
   }
   .ingridiets {
+    border: 1px solid #fff;
     width: 100%;
     margin-top: 39px;
   }
@@ -334,10 +345,14 @@
     transition: transform 500ms linear;
     // transition-property: scale;
   }
+  .ingridient-cell {
+    border-radius: 4px;
+  }
   .ingridient-cell:hover,
   .ingridient-cell:focus {
     transform: scale(1.1);
     background: #9cbe8f;
+    border-radius: 4px;
   }
 
   .ingridient-mass {
@@ -365,6 +380,11 @@
     height: 42px;
     width: 100%;
     padding: 11px 11px;
+    transition: scale 300ms linear;
+  }
+  .cliets-data-field:hover,
+  .cliets-data-field:focus {
+    scale: 1.15;
   }
   .text-area-field {
     background: rgba(248, 210, 78, 0.1);
@@ -375,6 +395,11 @@
     margin-top: 16px;
     resize: none;
     padding: 11px 11px;
+    transition: scale 300ms linear;
+  }
+  .text-area-field:hover,
+  .text-area-field:focus {
+    scale: 1.15;
   }
   .text-area-field::placeholder {
     font-family: 'Montserrat';
