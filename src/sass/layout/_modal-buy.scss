@@ -49,6 +49,8 @@
 
     &__thumb{
         position: relative;
+        cursor: pointer;
+
 
         display: flex;
         flex-direction: column;
@@ -183,6 +185,8 @@
         background: rgba(248, 210, 78, 0.1);
         border: 1px solid #84A178;
         border-radius: 10px;
+
+        resize:none;
 
         @media screen and (min-width: $tablet) {
             max-width: 368px;  
