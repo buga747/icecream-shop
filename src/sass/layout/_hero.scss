@@ -42,6 +42,7 @@
   font-size: 8px;
   font-weight: 600;
   line-height: 1.21;
+  transition: color $transition;
 
   color: $accent-color;
 
@@ -53,7 +54,7 @@
     color: $primary-light-color;
   }
 
-  &:--disabled {
+  &--disabled {
     color: $btn-disabled-color;
   }
 
@@ -111,6 +112,15 @@
 
 .hero__arrow {
   fill: $primary-light-color;
+  transition: color $transition;
+
+  &:hover {
+    transform: scale(1.25);
+  }
+
+  &:focus {
+    transform: scale(1.25, 1.5);
+  }
 }
 
 .hero__picture-ice {
