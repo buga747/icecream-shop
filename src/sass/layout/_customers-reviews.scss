@@ -1,17 +1,17 @@
 .slick {
-  margin-top: 452px;
+  margin-top: 80px;
   outline: 1px solid tomato;
+
+  @media screen and (min-width:768px) {
+      margin-top: 223px;
+    }
+
+        @media screen and (min-width:1200px) {
+          margin-top: 452px;
+        }
 }
 
-.slick-title {
-  text-align: center;
-  color: green;
-}
 
-.slick-list {
-  padding: 0;
-  margin: 0;
-}
 
 .slick-top-title {
   width: 280px;
@@ -19,7 +19,7 @@
   margin-left: auto;
   margin-right: auto;
 display: block;
-  background-color: #84a178;
+  background-color: $section-background-color;
   border-radius: 10px;
   font-size: 12px;
   font-family: $main-font;
@@ -30,6 +30,37 @@ display: block;
   color: $primary-light-color;
   text-align: center;
   margin-top: 32px;
+
+  @media screen and (min-width:768px) {
+        width: 705px;
+          min-height: 138px;
+          margin-left: auto;
+          margin-right: auto;
+        
+          background-color: $section-background-color;
+          border-radius: 24px;
+          font-size: 14px;
+          
+          font-weight: 500;
+          line-height: 1.86;
+          text-align: center;
+          padding: 29px 80px;
+          color: $primary-light-color;
+          text-align: center;
+          margin-top: 28px;
+    }
+
+    @media screen and (min-width:1200px) {
+      width: 968px;
+         background-color: $section-background-color;
+     
+      font-size: 16px;
+      font-family: $main-font;
+            text-align: center;
+      padding: 39px 73px;
+            margin-top: 32px;
+    }
+
 }
 
 .reviewer-photo {
@@ -44,27 +75,40 @@ display: block;
   margin-top: 30px;
 font-family: $main-font;
   font-size: 20px;
+  font-weight: 500;
   line-height: 1.86;
   text-align: center;
   color: $primary-text-color;
+
+  @media screen and (min-width:768px) {
+      margin-top: 32px;
+        font-family: $main-font;
+        font-size: 16px;
+        
+    }
+
+    @media screen and (min-width:1200px) {
+    
+      font-family: $main-font;
+    
+      
+    }
+
 }
 
-.slick-item {
-  width: 968px;
-  min-height: 361px;
-  margin-left: auto;
-  
-}
+
 
 .slick-dots li.slick-active button:before {
  color:$icons-color;
  font-size: 12px;
 }
 
-.slick-track {
-    background-color: tomato;
-    
+.slick-dots li button:before {
+  font-size: 12px;
+  color: $slick-color;
 }
+
+
 
 .slick-js .slick-initialized .slick-slider .slick-dotted {
 min-height: 485px;
