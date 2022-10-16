@@ -101,8 +101,11 @@
             }
     }
     .buy-btn{
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 152px;  
+            
         @media screen and (min-width: $tablet) {
             display: none;
         }
