@@ -106,6 +106,7 @@
     height: 50px;
     background-color: $accent-color;
     margin-bottom: 40px;
+    transition: transform $transition;
 
     @media screen and (min-width: 0px) {
       background-image: url('../images/superiority/milk-@1x.png');
@@ -116,6 +117,13 @@
         background-image: url('../images/superiority/milk-@2x.png');
       }
     }
+  }
+
+  &__milk:hover::before {
+    transform: rotate(360deg);
+    animation: headShake;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
   }
 
   &__weight::before {
@@ -129,6 +137,7 @@
     height: 50px;
     background-color: $accent-color;
     margin-bottom: 40px;
+    transition: transform $transition;
 
     @media screen and (min-width: 0px) {
       background-image: url('../images/superiority/weight-@1x.png');
@@ -139,6 +148,13 @@
         background-image: url('../images/superiority/weight-@2x.png');
       }
     }
+  }
+
+  &__weight:hover::before {
+    transform: rotate(360deg);
+    animation: bounce;
+    animation-duration: 0.9s;
+    animation-delay: 0.25s;
   }
 
   &__ice::before {
@@ -152,6 +168,7 @@
     height: 50px;
     background-color: $accent-color;
     margin-bottom: 40px;
+    transition: transform $transition;
 
     @media screen and (min-width: 0px) {
       background-image: url('../images/superiority/ice-@1x.png');
@@ -162,6 +179,13 @@
         background-image: url('../images/superiority/ice-@2x.png');
       }
     }
+  }
+
+  &__ice:hover::before {
+    transform: rotate(360deg);
+    animation: swing;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
   }
 
   &__milk::before {
