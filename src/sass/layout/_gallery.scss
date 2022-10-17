@@ -71,6 +71,8 @@
   top: -24px;
   border-radius: 25px;
   overflow: hidden;
+  width: 279px;
+  height: 130px;
 
   animation-name: galleryAnimation;
   animation-duration: 9s;
@@ -78,10 +80,14 @@
 
   @media screen and (min-width: 768px) {
     top: -164px;
+    width: 704px;
+    height: 327px;
   }
 
   @media screen and (min-width: 1200px) {
     top: -94px;
+    width: 1013px;
+    height: 422px;
   }
 }
 
