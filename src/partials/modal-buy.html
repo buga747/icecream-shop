@@ -1,76 +1,74 @@
-<!-- <div class="backdrop"> -->
-<!-- <div class="backdrop is-hidden"> -->
-<!-- <div class="modal-buy"> -->
-<div class="modal modal-buy" data-modal="buy-nov">
-  <form action="">
-    <!-- close button start -->
-    <button class="modal-buy__close">
-      <svg class="js-modal-close modal-buy__close-icon" width="16" height="16">
-        <use href="./images/icons/icons.svg#modal-close"></use>
-      </svg>
-    </button>
-    <h2 class="modal-buy__title">Buy now</h2>
-    <!-- close button end -->
+<div class="backdrop is-hidden" id="buy-now-modal">
+  <div class="modal modal-buy">
+    <form action="">
+      <!-- close button start -->
+      <button class="modal-buy__close" id="buy-now-modal-close">
+        <svg class="modal-buy__close-icon" width="16" height="16">
+          <use href="./images/icons/icons.svg#modal-close"></use>
+        </svg>
+      </button>
+      <h2 class="modal-buy__title">Buy now</h2>
+      <!-- close button end -->
 
-    <!-- checkbox start -->
-    <ul class="modal-buy__list">
-      <li class="modal-buy__item">
-        <label>
-          <input visually-hidden class="modal-buy__checkbox visually-hidden" type="checkbox" name="product"
-            value="ice-cream" id="ice-cream" />
+      <!-- checkbox start -->
+      <ul class="modal-buy__list">
+        <li class="modal-buy__item">
+          <label>
+            <input visually-hidden class="modal-buy__checkbox visually-hidden" type="checkbox" name="product"
+              value="ice-cream" id="ice-cream" />
 
-          <div class="modal-buy__thumb modal-buy__ice-cream">
-            <img class="modal-buy__img" srcset="
+            <div class="modal-buy__thumb modal-buy__ice-cream">
+              <img class="modal-buy__img" srcset="
                 ./images/buy-nov/ice-cream@1x.png 1x,
                 ./images/buy-nov/ice-cream@2x.png 2x
               " src="./images/buy-nov/ice-cream@1x.png" alt="ice cream" />
-            <h3 class="modal-buy__subtitle">ice cream</h3>
-          </div>
-        </label>
-      </li>
-      <li>
-        <label>
-          <input class="modal-buy__checkbox visually-hidden" type="checkbox" name="product" value="ice-coffee"
-            id="ice-coffee" />
+              <h3 class="modal-buy__subtitle">ice cream</h3>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="modal-buy__checkbox visually-hidden" type="checkbox" name="product" value="ice-coffee"
+              id="ice-coffee" />
 
-          <div class="modal-buy__thumb modal-buy__ice-coffee">
-            <img class="modal-buy__img" srcset="
+            <div class="modal-buy__thumb modal-buy__ice-coffee">
+              <img class="modal-buy__img" srcset="
                 ./images/buy-nov/ice-coffee@1x.png 1x,
                 ./images/buy-nov/ice-coffee@2x.png 2x
               " src="./images/buy-nov/ice-coffee@1x.png" alt="ice coffee" />
-            <h3 class="modal-buy__subtitle">ice coffee</h3>
-          </div>
-        </label>
-      </li>
-      <li>
-        <label>
-          <input class="modal-buy__checkbox visually-hidden" type="checkbox" name="product" value="milkshake"
-            id="milkshake" />
+              <h3 class="modal-buy__subtitle">ice coffee</h3>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input class="modal-buy__checkbox visually-hidden" type="checkbox" name="product" value="milkshake"
+              id="milkshake" />
 
-          <div class="modal-buy__thumb modal-buy__milkshake">
-            <img class="modal-buy__img" srcset="
+            <div class="modal-buy__thumb modal-buy__milkshake">
+              <img class="modal-buy__img" srcset="
                 ./images/buy-nov/milkshake@1x.png 1x,
                 ./images/buy-nov/milkshake@2x.png 2x
               " src="./images/buy-nov/milkshake@1x.png" alt="milkshake" />
-            <h3 class="modal-buy__subtitle">milkshake</h3>
-          </div>
-        </label>
-      </li>
-    </ul>
-    <!-- checkbox end -->
+              <h3 class="modal-buy__subtitle">milkshake</h3>
+            </div>
+          </label>
+        </li>
+      </ul>
+      <!-- checkbox end -->
 
-    <label>
-      <input class="modal-buy__username" type="username" placeholder="Name" name="username" id="username"
-        pattern="[A-Za-z0-9]{3,}" title="The login cannot be less than 3 Latin characters." required />
-    </label>
+      <label>
+        <input class="modal-buy__username" type="username" placeholder="Name" name="username" id="username"
+          pattern="[A-Za-z0-9]{3,}" title="The login cannot be less than 3 Latin characters." required />
+      </label>
 
-    <label>
-      <input class="modal-buy__tel" type="tel" name="tel" id="tel" pattern="[0-9]{10,10}"
-        title="The number must consist of 10 characters." placeholder="Phone" required />
-    </label>
+      <label>
+        <input class="modal-buy__tel" type="tel" name="tel" id="tel" pattern="[0-9]{10,10}"
+          title="The number must consist of 10 characters." placeholder="Phone" required />
+      </label>
 
-    <textarea class="modal-buy__textarea" name="commentary" id="commentary" rows="3" placeholder="Comment"></textarea>
-    <button class="submit-btn btn-background" type="submit">Submit</button>
-  </form>
-</div>
-<!-- </div> -->
+      <textarea class="modal-buy__textarea" name="commentary" id="commentary" rows="3" placeholder="Comment"></textarea>
+      <button class="submit-btn btn-background" type="submit">Submit</button>
+    </form>
+  </div>
+  <!-- </div> -->
