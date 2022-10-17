@@ -1,0 +1,35 @@
+.products__uppertitle {
+position: absolute;
+width: 146px;
+height: 22px;
+
+font-family: var($main-font);
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: calc(22 / 18);
+text-align: center;
+text-transform: uppercase;
+
+color: var($primary-text-color);
+margin-bottom: 12px;
+}
+
+.products__title {
+position: absolute;
+width: 270px;
+height: 38px;
+
+font-family: var($secondary-font);
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: calc(38 / 30);
+
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: var($primary-text-color);
+margin-bottom: 40px;
+}
