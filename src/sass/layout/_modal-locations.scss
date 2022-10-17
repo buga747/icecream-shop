@@ -36,7 +36,7 @@
             &:hover,
             &:focus {
             fill: $accent-color;
-            transform: scale(1.7);
+            transform: scale(1.7) rotate(90deg);
             }
         
             @include breakpoint-min($tablet) {
@@ -65,8 +65,13 @@
             font-size: 20px;
             line-height: 1.4;
             }
-        }
-        
+    }
+    &-title:hover,
+    &-title:focus {
+        text-shadow: #FC0 1px 0 10px;
+    }
+    
+
         &-map {
             display: block;
             border-radius: $btn-border-radius-desktop;
