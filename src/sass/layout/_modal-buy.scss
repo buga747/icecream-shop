@@ -1,8 +1,4 @@
 .modal-buy {
-    @media screen and (max-width: 767px) {
-        height: inherit;
-    }
-
 
     // icon
     &__close {
@@ -192,5 +188,10 @@
         border-radius: 10px;
 
         resize: none;
+
+        @media screen and (min-width: $tablet) {
+            max-width: 368px;
+            margin-bottom: 32px;
+        }
     }
 }
