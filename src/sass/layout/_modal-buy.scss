@@ -1,20 +1,24 @@
-.modal-buy{
+.modal-buy {
+    @media screen and (max-width: 767px) {
+        height: inherit;
+    }
+
 
     // icon
-    &__close{    
+    &__close {
         position: absolute;
         top: 8px;
         right: 8px;
-    
+
         background: none;
 
         @media screen and (min-width: $tablet) {
             top: 20px;
-            right: 20px;   
+            right: 20px;
         }
     }
- 
-    &__close-icon{
+
+    &__close-icon {
         fill: $primary-text-color;
         cursor: pointer;
 
@@ -25,7 +29,7 @@
 
     // title
 
-    &__title{
+    &__title {
         font-family: 'Seymour One';
         font-weight: 400;
         font-size: 16px;
@@ -39,15 +43,16 @@
             margin-bottom: 103px;
         }
     }
-    &__subtitle{
+
+    &__subtitle {
         font-size: 16px;
         line-height: 1.25;
-        letter-spacing: 0.04em;  
+        letter-spacing: 0.04em;
         text-transform: uppercase;
     }
 
 
-    &__thumb{
+    &__thumb {
         position: relative;
         cursor: pointer;
 
@@ -68,43 +73,43 @@
     // &__checkbox{
     //     display: none;
     // }
-    
-    &__checkbox:checked + .modal-buy__ice-cream {
+
+    &__checkbox:checked+.modal-buy__ice-cream {
         background-color: #96AF8C;
     }
 
-    &__checkbox:checked + .modal-buy__ice-coffee {
+    &__checkbox:checked+.modal-buy__ice-coffee {
         background-color: #EFD478;
     }
 
-    &__checkbox:checked + .modal-buy__milkshake {
+    &__checkbox:checked+.modal-buy__milkshake {
         background-color: #D6936D;
     }
 
 
-    &__img{
+    &__img {
         position: absolute;
         top: 0;
         transform: translateY(-50%);
         scale: 1.35;
     }
 
-    &__ice-cream{
+    &__ice-cream {
         border-color: #96AF8C;
         box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
     }
 
-    &__ice-coffee{
+    &__ice-coffee {
         border-color: #EFD478;
         box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
-    }    
+    }
 
-    &__milkshake{
+    &__milkshake {
         border-color: #D6936D;
         box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
     }
 
-    &__list{
+    &__list {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -121,7 +126,7 @@
         }
     }
 
-    input{
+    input {
         width: 100%;
         max-width: 224px;
         height: 32px;
@@ -141,33 +146,33 @@
         border-radius: 10px;
 
         @media screen and (min-width: $tablet) {
-            max-width: 368px;   
+            max-width: 368px;
         }
     }
 
-    &__username{
+    &__username {
         margin-bottom: 12px;
 
         @media screen and (min-width: $tablet) {
-          margin-bottom: 16px;  
+            margin-bottom: 16px;
         }
     }
 
-    &__tel{
-    margin-bottom: 12px;
+    &__tel {
+        margin-bottom: 12px;
 
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 16px;  
-    }
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 16px;
+        }
     }
 
-    &__textarea{
+    &__textarea {
         display: block;
 
         height: 65px;
         width: 100%;
-        max-width: 224px;        
-        
+        max-width: 224px;
+
         padding-left: 12px;
         padding-right: 12px;
         padding-top: 8px;
@@ -186,13 +191,6 @@
         border: 1px solid #84A178;
         border-radius: 10px;
 
-        resize:none;
-
-        @media screen and (min-width: $tablet) {
-            max-width: 368px;  
-            margin-bottom: 32px;
-        }
+        resize: none;
     }
 }
-
-
