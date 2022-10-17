@@ -2,9 +2,8 @@
     background-color: $section-background-color;
     margin-right: auto;
     margin-left: auto;
+
     
-    /*position: absolute;
-    top: 96px;*/
 
     &-group {
 
@@ -43,6 +42,7 @@
         color: $primary-text-color;
     
         margin-bottom: 20px;
+
     
     &:last-child {
         margin-bottom: 0;
@@ -155,6 +155,25 @@
         }
     }
 
+    .contacts-reference {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+        transform: translateY(-345px);
+        justify-content: center;
+        align-items: center;
+    
+        @include breakpoint-min($tablet) {
+            transform: translateY(-304px);
+        }
+        
+        @include breakpoint-min($desktop) {
+            transform: translateY(-96px);
+        }
+    }
         
     .contacts-btn {
             display: flex;
@@ -170,26 +189,22 @@
                 margin-right: auto;
     
     
-                .contacts-btn:last-child {
-                    margin-bottom: 0;
-                }
-    
             @include breakpoint-min($tablet) {
                 margin-left: 0;
                 margin-right: 0;
+                margin-bottom: 0;
             }
         } 
     
         .contacts-btn__wrapper {
             display: block;
             margin-top: 32px;
-            padding-bottom: 39px;
+            margin-bottom: 40px;
     
     
             @include breakpoint-min($tablet) {
                 display: flex;
                 margin-top: 60px;
-                padding-bottom: 40px;
                 gap: 16px;
                 align-items: center;
                 justify-content: center;
@@ -199,7 +214,7 @@
     
             @include breakpoint-min($desktop) {
                 margin-top: 64px;
-                padding-bottom: 120px;
+                margin-bottom: 120px;
             }
         }
 
@@ -208,3 +223,35 @@
             fill: none;
             stroke: currentColor;
         }   
+
+        .contacts__information:hover,
+        .contacts__information:focus {
+            box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+
+        &.rotate-y {
+                animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
+                /*animation: rotateY 3000ms infinite alternate backwards ease-in-out 1000ms;*/
+        
+            } 
+    
+            /*@keyframes rotateY {
+                0% {
+                transform: perspective(400px) rotateY(0deg);
+                }
+            
+                100% {
+                transform: perspective(400px) rotateY(15deg);
+                }
+            }*/
+    
+            @keyframes rotateY {
+                0% {
+                transform: perspective(400px) rotateY(15deg);
+                }
+            
+                100% {
+                transform: perspective(400px) rotateY(-15deg);
+                }
+            }
+        }

@@ -36,7 +36,7 @@
             &:hover,
             &:focus {
             fill: $accent-color;
-            transform: scale(1.7) rotate(90deg);
+            transform: scale(1.5) rotate(90deg);
             }
         
             @include breakpoint-min($tablet) {
@@ -65,7 +65,9 @@
             font-size: 20px;
             line-height: 1.4;
             }
+
     }
+
     &-title:hover,
     &-title:focus {
         text-shadow: #FC0 1px 0 10px;
@@ -78,11 +80,21 @@
             margin: 0 auto;
             width: 224px;
             height: 199px;
+
         
             @include breakpoint-min($tablet) {
             width: 448px;
             height: 260px;
             }
         }
+    }
+
+    .contacts-modal-map:hover,
+    .contacts-modal-map:focus {
+    transform: scale(1.1);
+    }
+
+    .location-form__btn {
+        margin-top: 32px;
     }
     
