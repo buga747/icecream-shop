@@ -1,0 +1,2 @@
+(()=>{const e={openModalBtn:document.getElementById("about-modal-open"),closeModalBtn:document.getElementById("about-modal-close"),modal:document.getElementById("about-modal")},t=document.getElementById("body");function o(){e.modal.classList.toggle("is-hidden")}function n(){t.classList.toggle("locked")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o),e.openModalBtn.addEventListener("click",n),e.closeModalBtn.addEventListener("click",n)})();
+//# sourceMappingURL=index.73ff3898.js.map
