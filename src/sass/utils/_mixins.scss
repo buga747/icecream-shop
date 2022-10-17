@@ -1,11 +1,11 @@
 // міксини переходу
 @mixin transition($type) {
-    transition: $type $trans-dur $trans-t-funct;
+    transition: $type $transition;
 }
 
 @mixin transition-two($type-a, $type-b) {
-    transition: $type-a $trans-dur $trans-t-funct,
-        $type-b $trans-dur $trans-t-funct;
+    transition: $type-a $transition,
+        $type-b $transition;
 }
 
 
