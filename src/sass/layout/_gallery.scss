@@ -79,10 +79,11 @@
   position: absolute;
   opacity: 0;
   top: -24px;
-  border-radius: 25px;
-  overflow: hidden;
   width: 279px;
   height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   animation-name: galleryAnimation;
   animation-duration: 9s;
@@ -111,4 +112,10 @@
 
 .gallery__item:nth-child(3) {
   animation-delay: 6s;
+
+}
+
+.gallery-img {
+  border-radius: 25px;
+  overflow: hidden;
 }
