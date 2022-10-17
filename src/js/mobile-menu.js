@@ -8,6 +8,7 @@
   const link2 = document.getElementById('link2');
   const link3 = document.getElementById('link3');
   const link4 = document.getElementById('link4');
+  const link5 = document.getElementById('buyNowModalOpenMobile');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -27,6 +28,7 @@
   link2.addEventListener('click', toggleMenu);
   link3.addEventListener('click', toggleMenu);
   link4.addEventListener('click', toggleMenu);
+  link5.addEventListener('click', toggleMenu);
 
   openMenuBtn.addEventListener('click', locking);
   closeMenuBtn.addEventListener('click', locking);
@@ -34,6 +36,7 @@
   link2.addEventListener('click', locking);
   link3.addEventListener('click', locking);
   link4.addEventListener('click', locking);
+  link5.addEventListener('click', locking);
 
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;

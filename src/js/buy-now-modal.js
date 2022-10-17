@@ -1,7 +1,7 @@
 (() => {
   const refs = {
     openModalBtn: document.getElementById('buy-now-modal-open'),
-    openModalBtnMobile: document.getElementById('buy-now-modal-open-mobile'),
+    openModalBtnMobile: document.getElementById('buyNowModalOpenMobile'),
     closeModalBtn: document.getElementById('buy-now-modal-close'),
     modal: document.getElementById('buy-now-modal'),
   };
