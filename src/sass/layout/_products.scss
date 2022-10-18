@@ -290,6 +290,8 @@ margin-bottom: auto;
     margin-left: auto;
     background: none;
 
+    cursor: pointer;
+
     &:focus {
         transform: scale(1.25, 1.5);
     }
