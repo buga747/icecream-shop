@@ -1,0 +1,93 @@
+<div class="modal" data-modal="1">
+
+    <h2 class="modal__title">Chololate icecream</h2>
+
+    <button type="button" class="modal-close" data-modal="close">
+        <svg class="modal-close-icon" width="20" height="20">
+            <use href="./images/icons/icons.svg#close"></use>
+        </svg>
+    </button>
+    <div>
+        <picture>
+            <!-- FOR MOBILE -->
+            <source media="(max-width=479)"
+                srcset="./images/modal-product/ice-cream/isream-1x.jpg 1x ,./images/modal-product/ice-cream/isream-2x.jpg 2x" />
+            <!-- FOR TABLER -->
+            <source media="(min-width=480)"
+                srcset="./images/modal-product/ice-cream/isream-1x.jpg 1x ,./images/modal-product/ice-cream/isream-2x.jpg 2x" />
+            <!-- FOR DESKTOP -->
+            <source media="(min-width=1200)"
+                srcset="./images/modal-product/ice-cream/isream-1x.jpg 1x ,./images/modal-product/ice-cream/isream-3x.jpg 3x" />
+            <img class="picture" src="./images/modal-product/ice-cream/isream-1x.jpg" alt="Рожок мороженного">
+        </picture>
+
+    </div>
+
+    <ul class="energe-price">
+        <li class="m-e">
+            <p class="in-mass">320</p>
+            <h3 class="m-e-name">kcal</h3>
+        </li>
+        <li class="m-e">
+            <p class="in-mass">4g</p>
+            <h3 class="m-e-name">Prote</h3>
+        </li>
+        <li class="m-e">
+            <p class="in-mass">8.2g</p>
+            <h3 class="m-e-name">Fats</h3>
+        </li>
+        <li class="m-e">
+            <p class="in-mass">40.4g</p>
+            <h3 class="m-e-name">Carbs</h3>
+        </li>
+    </ul>
+
+    <!-- Ингридиенты -->
+
+    <table class="ingridiets">
+        <caption class="ingridients-title">Ingredients</caption>
+        <tr class="ingridient-cell">
+            <td class="ingridient-name hover-color">Milk</td>
+            <td class="ingridient-mass hover-color">100ml</td>
+        </tr>
+        <tr class="ingridient-cell">
+            <td class="ingridient-name hover-color">Belgian chocolate</td>
+            <td class="ingridient-mass hover-color">20g</td>
+        </tr>
+        <tr class="ingridient-cell">
+            <td class="ingridient-name hover-color">Cream</td>
+            <td class="ingridient-mass hover-color">150ml</td>
+        </tr>
+        <tr class="ingridient-cell">
+            <td class="ingridient-name hover-color">Cocoa powder</td>
+            <td class="ingridient-mass hover-color">30g</td>
+        </tr>
+        <tr class="ingridient-cell">
+            <td class="ingridient-name hover-color">Sugar</td>
+            <td class="ingridient-mass hover-color">40g</td>
+        </tr>
+        <tr class="ingridient-cell">
+            <td class="ingridient-name hover-color">Vanilla sugar</td>
+            <td class="ingridient-mass hover-color">10g</td>
+        </tr>
+
+    </table>
+
+    <!-- Данные клиента -->
+    <div class="clients-data">
+        <form>
+            <input type="text" class="cliets-data-field" name="Name" placeholder="Name" required minlength="2" />
+            <input type="text" class="cliets-data-field" name="Contact" placeholder="Phone" required minlength="5" />
+            <textarea class="text-area-field" name="Coments" placeholder="Comment" id=""></textarea>
+        </form>
+    </div>
+
+
+    <!-- Кнопка отправить -->
+    <div class="submit-button">
+        <button class="submit-send" type="submit">Submit</button>
+    </div>
+
+
+
+</div>
