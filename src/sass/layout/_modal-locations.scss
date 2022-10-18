@@ -60,6 +60,7 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 1.5;
+            transition-duration: 600ms;
         
             @include breakpoint-min($tablet) {
             font-size: 20px;
@@ -80,7 +81,7 @@
             margin: 0 auto;
             width: 224px;
             height: 199px;
-
+            transition-duration: 2000ms;
         
             @include breakpoint-min($tablet) {
             width: 448px;

@@ -140,18 +140,14 @@
             width: 288px;
             }
         }
-    
-        &__time {
-            color: $btn-disabled-color;
-            margin-bottom: 8px;
-    
-            @include breakpoint-min($tablet) {
-                margin-bottom: 12px;
-            }
+    }
 
-            &:nth-child(4) {
-                margin-bottom: 0;
-            }
+    .contacts__schedule  .contacts-hour:not(:last-child) {
+        color: $btn-disabled-color;
+        margin-bottom: 8px;
+
+        @include breakpoint-min($tablet) {
+            margin-bottom: 12px;
         }
     }
 
