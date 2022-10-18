@@ -1,9 +1,9 @@
 .products {
-    padding: 60px 20px;
     background-repeat: repeat-y;
-    background-position: 50% 50%;
     background-size: cover;
     object-fit: contain;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     background-image: url(../images/products/background/sm/1sm@1x.png);
 
@@ -15,7 +15,8 @@
 
     //tablet styles
     @media screen and (min-width: 768px) {
-        padding: 60px 32px;
+        padding-top: 61px;
+        padding-bottom: 82px;
         background-image: url(../images/products/background/md/md@1x.png);
         background-repeat: no-repeat;
 
@@ -29,7 +30,8 @@
 
     //desktop styles
     @media screen and (min-width: 1200px) {
-        padding: 60px 13px;
+        padding-top: 60px;
+        padding-bottom: 66px;
         background-image: url(../images/products/background/lg/lg@1x.png);
         background-repeat: no-repeat;
 
