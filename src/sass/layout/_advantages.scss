@@ -1,0 +1,301 @@
+@import '../utils/variables';
+
+.interruptions {
+  padding-top: 60px;
+  background-color: $section-background-color;
+  padding-bottom: 60px;
+
+  &__list {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 32px;
+    }
+  }
+
+  &__list {
+    @media screen and (max-width: 1200px) {
+      gap: 80px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__list {
+    @media screen and (max-width: 768px) {
+      gap: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__milk {
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 152px;
+    }
+  }
+
+  &__weight {
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 152px;
+    }
+  }
+
+  &__ice {
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 152px;
+    }
+  }
+
+  &__milk {
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 230px;
+    }
+  }
+
+  &__weight {
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 230px;
+    }
+  }
+
+  &__ice {
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 230px;
+    }
+  }
+
+  &__milk {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 368px;
+    }
+  }
+
+  &__milk::before {
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 36px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: $accent-color;
+    margin-bottom: 40px;
+    transition: transform $transition;
+
+    @media screen and (min-width: 0px) {
+      background-image: url('../images/superiority/milk-@1x.png');
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/superiority/milk-@2x.png');
+      }
+    }
+  }
+
+  &__milk:hover::before {
+    transform: rotate(360deg);
+    animation: headShake;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+  }
+
+  &__weight::before {
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 36px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: $accent-color;
+    margin-bottom: 40px;
+    transition: transform $transition;
+
+    @media screen and (min-width: 0px) {
+      background-image: url('../images/superiority/weight-@1x.png');
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/superiority/weight-@2x.png');
+      }
+    }
+  }
+
+  &__weight:hover::before {
+    transform: rotate(360deg);
+    animation: bounce;
+    animation-duration: 0.9s;
+    animation-delay: 0.25s;
+  }
+
+  &__ice::before {
+    display: inline-block;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 36px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: $accent-color;
+    margin-bottom: 40px;
+    transition: transform $transition;
+
+    @media screen and (min-width: 0px) {
+      background-image: url('../images/superiority/ice-@1x.png');
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/superiority/ice-@2x.png');
+      }
+    }
+  }
+
+  &__ice:hover::before {
+    transform: rotate(360deg);
+    animation: swing;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+  }
+
+  &__milk::before {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__weight::before {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__ice::before {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__milk::before {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__weight::before {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__ice::before {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__weight {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 368px;
+    }
+  }
+
+  &__ice {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 368px;
+    }
+  }
+
+  &__quality {
+    text-align: center;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: calc(71 / 58);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $primary-light-color;
+
+    padding-bottom: 16px;
+  }
+
+  &__text {
+    text-align: center;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+
+    color: $primary-light-color;
+  }
+
+  &__quality {
+    @media screen and (max-width: 1200px) {
+      font-size: 48px;
+      line-height: calc(59 / 48);
+    }
+  }
+
+  &__text {
+    @media screen and (max-width: 1200px) {
+      font-size: 14px;
+      line-height: 174%;
+    }
+  }
+
+  &__quality {
+    @media screen and (max-width: 768px) {
+      font-size: 36px;
+      line-height: calc(42 / 36);
+    }
+  }
+
+  &__text {
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+      line-height: 170%;
+    }
+  }
+}

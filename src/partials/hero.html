@@ -1,15 +1,30 @@
 <section class="hero">
   <div class="container hero__container">
-    <h1 class="hero-title">
-      ice cream made with <span class="hero-title--accent">passion</span>
-    </h1>
+    <div class="hero__up">
+      <h1 class="hero-title" data-aos="zoom-in-left">
+        ice cream made with <span class="hero-title--accent">passion</span>
+      </h1>
+      <div class="hero__amount scale-up-center">
+        <ul>
+          <li class="hero_amount-item">
+            <p class="hero__amount-number">16</p>
+            <p class="hero__amount-text">cafes</p>
+          </li>
+          <li>
+            <p class="hero__amount-number">23</p>
+            <p class="hero__amount-text">food trucks</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <div class="hero__products">
       <button class="hero__btn btn-border" type="button">Products</button>
-      <a class="hero__poducts-link" href="">How it’s made?</a>
+      <a class="hero__poducts-link link" href="">How it’s made?</a>
     </div>
     <div class="hero__products-pict">
       <img
-        class="hero__products-img"
+        class="hero__products-img rotate-center"
         srcset="
           ./images/hero/more-lg@1x.png 225w,
           ./images/hero/more-lg@2x.png 450w,
@@ -25,12 +40,30 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <a class="" href="">
-          <svg class="hero__arrow" width="40" height="10">
-            <use href="./images/icons/icons.svg#Arrow"></use>
+        <a class="hero__link-arrow" href="">
+          <svg class="hero__arrow" width="40" height="20px">
+            <use href="./images/icons/icons.svg#arrow"></use>
           </svg>
         </a>
       </div>
     </div>
+    <div class="hero__picture">
+      <img
+        class="hero__picture-ice"
+        srcset="
+          ./images/hero/cream-lg@1x.png  641w,
+          ./images/hero/cream-lg@2x.png 1284w,
+          ./images/hero/cream-md@1x.png  379w,
+          ./images/hero/cream-md@2x.png  752w,
+          ./images/hero/cream-sm@1x.png  251w,
+          ./images/hero/cream-sm@2x.png  487w
+        "
+        sizes="(min-width: 1200px) 641px, (min-width: 768px) 379px, (max-width: 767px) 251px, 100vw"
+        src="./images/hero/cream-sm@1x.png"
+        alt="ice cream"
+      />
+    </div>
+
+    <div class="hero__points" data-aos="zoom-in"></div>
   </div>
 </section>

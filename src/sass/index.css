@@ -480,6 +480,58 @@ body {
   fill: #FCFCFC;
 }
 
+.interruptions {
+  padding-top: 60px;
+  background-color: #84a178;
+}
+@media screen and (min-width: 1200px) {
+  .interruptions__box {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .interruptions__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 32px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .interruptions__item {
+    width: 368px;
+    height: 223px;
+  }
+}
+.interruptions__item::before {
+  background-image: url(../../images/advantages/milk-@1x.png);
+}
+.interruptions__quality {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 71px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+.interruptions__text {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 176%;
+  /* or 28px */
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #fcfcfc;
+}
+
 .gallery-reviews-wrapper {
   margin: 0 auto;
 }
@@ -497,4 +549,56 @@ body {
   .mobile-btn {
     display: none;
   }
+}
+
+.interruptions {
+  padding-top: 60px;
+  background-color: #84a178;
+}
+@media screen and (min-width: 1200px) {
+  .interruptions__box {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .interruptions__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 32px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .interruptions__item {
+    width: 368px;
+    height: 223px;
+  }
+}
+.interruptions__item::before {
+  background-image: url(../../images/advantages/milk-@1x.png);
+}
+.interruptions__quality {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 71px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+.interruptions__text {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 176%;
+  /* or 28px */
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #fcfcfc;
 }/*# sourceMappingURL=index.css.map */

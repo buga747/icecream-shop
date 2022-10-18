@@ -1,0 +1,40 @@
+<div class="menu-container js-menu-container">
+  <a class="logo menu-container__logo" href="./index.html">
+    <img class="logo__img" srcset="
+        ./images/logo/tel-logo@1x.png      40w,
+        ./images/logo/tel-logo@2x.png      80w,
+        ./images/logo/tablet-logo@1x.png   48w,
+        ./images/logo/tablet-logo@2x.png   96w,
+        ./images/logo/desctop-logo@1x.png  60w,
+        ./images/logo/desctop-logo@2x.png 120w
+      " sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 100px) 40px"
+      src="./images/logo/tel-logo@1x.png" alt="Логотип" /></a>
+
+  <ul class="menu__nav">
+    <li class="menu__item">
+      <a href="#home" class="menu__link" id="link1">Home</a>
+    </li>
+    <li class="menu__item">
+      <a href="#about" class="menu__link" id="link2">How it’s made?</a>
+    </li>
+    <li class="menu__item">
+      <a href="#products" class="menu__link" id="link3">Our products</a>
+    </li>
+    <li class="menu__item">
+      <a href="#contacts" class="menu__link" id="link4">Contact</a>
+    </li>
+  </ul>
+
+  <button class="buy-btn btn-background link5" id="buyNowModalOpenMobile" data-modal="buy-nov">
+    Buy now
+    <svg class="buy-btn__icon" width="12" height="12">
+      <use href="./images/icons/icons.svg#triangle"></use>
+    </svg>
+  </button>
+
+  <button class="menu__close-tbn js-close-menu" type="button">
+    <svg class="mobile-btn__icon" width="32" height="32" aria-label="Перемикач мобільного меню">
+      <use href="./images/icons/icons.svg#close"></use>
+    </svg>
+  </button>
+</div>

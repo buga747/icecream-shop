@@ -14,6 +14,8 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +31,12 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <!-- Animation aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- base styles -->
   <link rel="stylesheet" href="./sass/index.scss" />
@@ -60,6 +68,9 @@
     <include src="./partials/footer.html"></include>
   </footer>
 
+  <!-- Back to top button -->
+  <a id="button"></a>
+
   <!-- mobile menu -->
   <include src="./partials/mobile-menu.html"></include>
 
@@ -88,6 +99,13 @@
   <div class="overlay js-overlay-modal"></div>
 
 
+  <!-- Aos animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/aos.js"></script>
+
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script type="module" src="./js/swiper.js"></script>
 
   <!-- jquery slick -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -95,13 +113,27 @@
 
   <!-- slick js -->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
   <script type="module" src="./js/slick.js"></script>
   <script type="module" src="./index.js"></script>
-  <!-- mobile-menu -->
-  <script type="module" src="./js/mobile-menu.js"></script>
+
+  <!-- anchor-scroll js -->
+  <script type="module" src="./js/anchor-scroll.js"></script>
+
+  <!-- body scroll lock -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+
   <!-- modals -->
+  <script type="module" src="./js/up-scroll.js"></script>
+  <script type="module" src="./js/mobile-menu.js"></script>
+  <script type="module" src="./js/buy-now-modal.js"></script>
+  <script type="module" src="./js/about-modal.js"></script>
+  <script type="module" src="./js/product-1-modal.js"></script>
+  <script type="module" src="./js/product-2-modal.js"></script>
+  <script type="module" src="./js/product-3-modal.js"></script>
+  <script type="module" src="./js/locations-modal.js"></script>
+  <script type="module" src="./js/franchise-modal.js"></script>
   <script type="module" src="./js/modals.js"></script>
 </body>
 

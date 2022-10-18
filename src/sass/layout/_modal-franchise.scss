@@ -1,0 +1,287 @@
+.contacts-modal-franchise {
+
+  @media screen and (max-width: 767px) {
+    height: inherit;
+  }
+
+  padding: 28px;
+  height: auto;
+
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+
+  background: $primary-light-color;
+  border: 2px solid $btn-main-color;
+  border-radius: 10px;
+  width: 280px;
+  padding: 28px 30px;
+
+  @include breakpoint-min($tablet) {
+    padding: 32px 60px;
+    width: 568px;
+  }
+}
+
+.contacts-modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  cursor: pointer;
+  transition: fill $transition, transform $transition;
+
+
+  @include breakpoint-min($tablet) {
+    top: 20px;
+    right: 20px;
+
+    width: 20px;
+    height: 20px;
+  }
+
+  .contacts-modal__btn .contacts-modal-close {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px transparent;
+
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+
+    -webkit-animation: glowing 1300ms infinite;
+    -moz-animation: glowing 1300ms infinite;
+    -o-animation: glowing 1300ms infinite;
+    animation: glowing 1300ms infinite;
+  }
+
+  @-webkit-keyframes glowing {
+    0% {
+      background-color: #0091b2;
+      -webkit-box-shadow: 0 0 3px #0091b2;
+    }
+
+    50% {
+      background-color: #21c7ed;
+      -webkit-box-shadow: 0 0 15px #21c7ed;
+    }
+
+    100% {
+      background-color: #0091b2;
+      -webkit-box-shadow: 0 0 3px #0091b2;
+    }
+  }
+
+  @keyframes glowing {
+    0% {
+      background-color: #0091b2;
+      box-shadow: 0 0 3px #0091b2;
+    }
+
+    50% {
+      background-color: #21c7ed;
+      box-shadow: 0 0 15px #21c7ed;
+    }
+
+    100% {
+      background-color: #0091b2;
+      box-shadow: 0 0 3px #0091b2;
+    }
+  }
+}
+
+
+.franchise {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $primary-text-color;
+
+  &-form__title {
+    font-family: $secondary-font;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+
+
+    @include breakpoint-min($tablet) {
+      width: 322px;
+      display: flex;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+  }
+
+  &-form__subtitle {
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: left;
+
+    @include breakpoint-min($tablet) {
+      margin-top: 24px;
+      font-size: 16px;
+      width: 448px;
+    }
+  }
+
+  &-form_group {
+    margin-bottom: 24px;
+    margin-top: 24px;
+
+    @include breakpoint-min($tablet) {
+      margin-bottom: 32px;
+      margin-top: 32px;
+    }
+  }
+
+  &-form__field {
+    position: relative;
+    display: block;
+    margin-bottom: 16px;
+
+    @include breakpoint-min($tablet) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-form__label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+
+    display: block;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+
+    @include breakpoint-min($tablet) {
+      left: 16px;
+      font-size: 14px;
+    }
+  }
+}
+
+.franchise-form__input:focus+.franchise-form__label,
+.franchise-form__input:not(:placeholder-shown)+.franchise-form__label {
+  transform: translate(-12px, -190%) scale(0.8);
+
+  @include breakpoint-min($tablet) {
+    transform: translate(-16px, -190%) scale(0.8);
+  }
+}
+
+.franchise-form__input {
+  width: 100%;
+  height: 32px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid $section-background-color;
+  border-radius: $btn-border-radius-desktop;
+  outline: transparent;
+
+  transition: border-color 450ms;
+
+  @include breakpoint-min($tablet) {
+    height: 42px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-color: #21c7ed;
+  }
+
+  &::placeholder {
+    opacity: 0;
+    transition: opacity 450ms;
+  }
+
+  &:focus::placeholder {
+    opacity: 1;
+  }
+}
+
+
+.franchise-form__label--heading {
+  position: absolute;
+  top: 20%;
+  left: 12px;
+  transform: translateY(-20%);
+
+  display: block;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+
+  @include breakpoint-min($tablet) {
+    left: 16px;
+    font-size: 14px;
+  }
+}
+
+.franchise-form__comments:focus+.franchise-form__label--heading,
+.franchise-form__comments:not(:placeholder-shown)+.franchise-form__label--heading {
+  transform: translate(-12px, -170%) scale(0.8);
+
+  @include breakpoint-min($tablet) {
+    transform: translate(-16px, -170%) scale(0.8);
+  }
+}
+
+.franchise-form__comments {
+  display: block;
+  width: 100%;
+  height: 64px;
+  padding: 8px 12px;
+
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid $section-background-color;
+  border-radius: $btn-border-radius-desktop;
+
+  resize: none;
+  outline: transparent;
+  font-size: 12px;
+  line-height: 1.4;
+
+  transition: border-color 450ms;
+
+  @include breakpoint-min($tablet) {
+    height: 84px;
+    padding: 11px 16px;
+    font-size: 14px;
+  }
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-color: #21c7ed;
+  }
+
+  &::placeholder {
+    opacity: 0;
+    transition: opacity 450ms;
+  }
+
+  &:focus::placeholder {
+    opacity: 1;
+  }
+}

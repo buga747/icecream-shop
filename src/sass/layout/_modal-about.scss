@@ -1,0 +1,82 @@
+.about-modal {
+  width: 280px;
+
+  @include breakpoint-min(768px) {
+    padding: 32px 60px;
+    width: 568px;
+  }
+}
+
+.about-modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  cursor: pointer;
+  transition: fill $transition, transform $transition;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    transform: rotate(360deg);
+  }
+
+  @include breakpoint-min(768px) {
+    top: 20px;
+    right: 20px;
+
+    width: 20px;
+    height: 20px;
+
+    & .about-modal-close {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.about-modal-title {
+  margin-bottom: 20px;
+
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+
+  @include breakpoint-min(768px) {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+  }
+}
+
+.about-modal-video {
+  display: block;
+  border-radius: 10px;
+  margin: 0 auto;
+
+  @include breakpoint-min(768px) {
+    width: 448px;
+    height: 205px;
+  }
+}
+
+.about-modal-text {
+  margin-top: 20px;
+
+  width: 224px;
+
+  font-weight: 400;
+  line-height: calc(20 / 14);
+  text-align: start;
+  color: $primary-text-color;
+
+  @include breakpoint-min(768px) {
+    width: 448px;
+    font-size: 16px;
+  }
+}

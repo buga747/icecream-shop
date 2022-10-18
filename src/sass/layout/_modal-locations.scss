@@ -1,0 +1,101 @@
+.contacts-modal {
+    padding: 28px;
+    height: auto;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%) scale(1);
+    
+    text-align: center;
+    background: $primary-light-color;
+    border: 2px solid $btn-main-color;
+    border-radius: 10px;
+        width: 280px;
+    
+        
+        @include breakpoint-min($tablet) {
+        padding: 32px 60px;
+        width: 568px;
+        }
+    
+        &-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            background-color: transparent;
+            cursor: pointer;
+            transition: fill $transition, transform $transition;
+        
+            &:hover,
+            &:focus {
+            fill: $accent-color;
+            transform: scale(1.5) rotate(90deg);
+            }
+        
+            @include breakpoint-min($tablet) {
+            top: 20px;
+            right: 20px;
+        
+            width: 20px;
+            height: 20px;
+        
+            & .contacts-modal-close {
+                width: 20px;
+                height: 20px;
+            }
+            }
+        }
+        
+        &-title {
+            margin-bottom: 28px;
+        
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            transition-duration: 600ms;
+        
+            @include breakpoint-min($tablet) {
+            font-size: 20px;
+            line-height: 1.4;
+            }
+
+    }
+
+    &-title:hover,
+    &-title:focus {
+        text-shadow: #FC0 1px 0 10px;
+    }
+    
+
+        &-map {
+            display: block;
+            border-radius: $btn-border-radius-desktop;
+            margin: 0 auto;
+            width: 224px;
+            height: 199px;
+            transition-duration: 2000ms;
+        
+            @include breakpoint-min($tablet) {
+            width: 448px;
+            height: 260px;
+            }
+        }
+    }
+
+    .contacts-modal-map:hover,
+    .contacts-modal-map:focus {
+    transform: scale(1.1);
+    }
+
+    .location-form__btn {
+        margin-top: 32px;
+    }
+    

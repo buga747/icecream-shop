@@ -1,0 +1,256 @@
+.contacts {
+    background-color: $section-background-color;
+    margin-right: auto;
+    margin-left: auto;
+
+    
+
+    &-group {
+
+        justify-content: center;
+        align-items: center;
+    
+        @include breakpoint-min($tablet) {
+            display: flex;
+            align-items: baseline;
+            gap: 16px;
+        }
+        
+        @include breakpoint-min($desktop) {
+            gap: 32px;
+        }
+    }
+    
+    &__information {
+        width: 280px;
+        height: auto;
+        padding: 40px 32px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    
+        background-color: $white-background-color;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        
+        letter-spacing: 0.04em;
+        color: $primary-text-color;
+    
+        margin-bottom: 20px;
+
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+        @include breakpoint-min($tablet) {
+            width: 224px;
+            font-size: 14px;
+            padding: 40px 24px;
+        }
+        
+        @include breakpoint-min($desktop) {
+            width: 368px;
+            padding: 40px;
+            font-size: 16px;
+    }
+    }
+    
+    &__title {
+        max-height: auto;
+        width: 80px;
+        text-align: center;
+        
+        background-color: $accent-color;
+        border-radius: 6px;
+        
+        margin-bottom: 20px;
+    
+        @include breakpoint-min($tablet) {
+            width: 73px;
+            margin-bottom: 32px;
+        }
+    }
+        
+        &__title--truck {
+            width: 130px;
+            max-height: auto;
+            text-align: center;
+            
+            background-color: $accent-color;
+            border-radius: 6px;
+            margin-bottom: 20px;
+    
+            @include breakpoint-min($tablet) {
+                width: 138px;
+                margin-bottom: 32px;
+            }
+            }
+    
+    
+            &-country__subtitle {
+                font-style: normal;
+                margin-bottom: 8px;
+    
+            @include breakpoint-min($tablet) {
+                    margin-bottom: 12px;
+            }
+    
+            @include breakpoint-min($desktop) {
+                margin-bottom: 8px;
+        }
+    }
+    
+    &-link {
+        line-height: 1.83;
+        
+        color: $product-3-bg-color;
+        margin-bottom: 24px;
+    
+        @include breakpoint-min($tablet) {
+            margin-bottom: 32px;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+        }
+    
+        
+        &__schedule {
+            border-top: 1px solid #E1E1E1;
+            border-bottom: 1px solid #E1E1E1;
+            width: 216px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+            
+            @include breakpoint-min($tablet) {
+                width: 176px;
+                padding-top: 32px;
+                padding-bottom: 32px;
+                margin-bottom: 32px;
+            }
+    
+            @include breakpoint-min($desktop) {
+            width: 288px;
+            }
+        }
+
+        &__time {
+            color: $btn-disabled-color;
+        }
+    }
+
+    .contacts__schedule  .contacts-hour:not(:last-child) {
+        margin-bottom: 8px;
+
+        @include breakpoint-min($tablet) {
+            margin-bottom: 12px;
+        }
+    }
+
+    .contacts-reference {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+        transform: translateY(-345px);
+        justify-content: center;
+        align-items: center;
+    
+        @include breakpoint-min($tablet) {
+            transform: translateY(-304px);
+        }
+        
+        @include breakpoint-min($desktop) {
+            transform: translateY(-96px);
+        }
+    }
+        
+    .contacts-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 196px;
+            min-height: 42px;
+            text-align: center;
+            font-size: 14px;
+    
+                margin-bottom: 16px;
+                margin-left: auto;
+                margin-right: auto;
+    
+    
+            @include breakpoint-min($tablet) {
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+        } 
+    
+        .contacts-btn__wrapper {
+            display: block;
+            margin-top: 32px;
+            margin-bottom: 40px;
+    
+    
+            @include breakpoint-min($tablet) {
+                display: flex;
+                margin-top: 60px;
+                gap: 16px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            
+            }
+    
+            @include breakpoint-min($desktop) {
+                margin-top: 64px;
+                margin-bottom: 120px;
+            }
+        }
+
+        .btn-icon {
+            margin-left: 6px;
+            fill: none;
+            stroke: currentColor;
+        }   
+
+        .contacts__information:hover,
+        .contacts__information:focus {
+            box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+
+        &.rotate-y {
+                animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
+                /*animation: rotateY 3000ms infinite alternate backwards ease-in-out 1000ms;*/
+        
+            } 
+    
+            /*@keyframes rotateY {
+                0% {
+                transform: perspective(400px) rotateY(0deg);
+                }
+            
+                100% {
+                transform: perspective(400px) rotateY(15deg);
+                }
+            }*/
+    
+            @keyframes rotateY {
+                0% {
+                transform: perspective(400px) rotateY(5deg);
+                }
+            
+                100% {
+                transform: perspective(400px) rotateY(-5deg);
+                }
+            }
+        }

@@ -1,0 +1,56 @@
+<!-- Modal window franchise-->
+
+<div class="backdrop is-hidden" id="franchise-modal">
+    <div class="contacts-modal-franchise modal">
+
+        <button class="contacts-modal__btn" id="franchise-modal-close" type="button">
+            <svg class="contacts-modal-close" width="20" height="20">
+                <use href="./images/icons/icons.svg#close"></use>
+            </svg>
+        </button>
+
+        <form class="franchise-form" name="franchise-form">
+            <strong class="franchise franchise-form__title">Thank you for your interest in owning an Ice Cream
+                shop</strong>
+            <p class="franchise franchise-form__subtitle">
+                Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at
+                this time. Once the application process resumes, we will contact you for further information. Please
+                fill
+                out the contact information below and we will reach out for additional information. We appreciate your
+                patience.
+            </p>
+
+            <div class="franchise-form_group" role="group">
+                <label class="franchise-form__field">
+                    <input class="franchise-form__input" type="text" name="user-name" pattern="[A-Za-z ]{1,32}" required
+                        placeholder="&nbsp;" />
+                    <span class="franchise-form__label">Name</span>
+                </label>
+
+                <label class="franchise-form__field">
+                    <input class="franchise-form__input" type="tel" name="user-phone" required
+                        placeholder="+38 099 999 99 99" />
+                    <span class="franchise-form__label">Phone</span>
+                </label>
+
+                <label class="franchise-form__field">
+
+                    <input class="franchise-form__input" type="email" name="user-mail" pattern=".+@gmail\.com" required
+                        placeholder="example@mail.com" />
+                    <span class="franchise-form__label">Email</span>
+                </label>
+
+                <label class="franchise-form__field">
+
+                    <textarea class="franchise-form__comments" name="user-comments" rows="4" pattern="[A-Za-z]{1,255}"
+                        placeholder="Enter the text"></textarea>
+                    <span class="franchise-form__label--heading">Comments</span>
+                </label>
+            </div>
+
+            <button class="franchise-form__btn btn-background" type="submit">Submit</button>
+
+        </form>
+    </div>
+
+</div>

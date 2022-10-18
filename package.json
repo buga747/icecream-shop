@@ -1,5 +1,5 @@
 {
-  "name": "parcel-project-template",
+  "name": "icecream-shop",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://buga747.github.io/icecream-shop",
@@ -9,15 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/goitacademy/icecream-shop.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/goitacademy/icecream-shop/issues"
   },
   "dependencies": {
+    "jquery": "^3.6.1",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {

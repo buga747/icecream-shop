@@ -2,6 +2,7 @@
   background-color: $section-background-color;
 }
 .hero__container {
+  position: relative;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -20,10 +21,89 @@
   }
 }
 
+.hero__up {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.hero__amount {
+  display: flex;
+  text-align: end;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 1.1s;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.hero_amount-item {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+  }
+}
+
+.hero__amount-number {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+
+  color: $primary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero__amount-text {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.22;
+
+  color: $primary-light-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .hero__products {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 20px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-bottom: 28px;
@@ -31,22 +111,41 @@
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 42px;
+    gap: 34px;
   }
 }
 
 .hero__poducts-link {
   text-decoration: underline;
+  font-size: 8px;
   font-weight: 600;
   line-height: 1.21;
+  transition: color $transition;
 
   color: $accent-color;
+
+  &:hover {
+    color: $btn-hover-color;
+  }
+
+  &:focus {
+    color: $primary-light-color;
+  }
+
+  &--disabled {
+    color: $btn-disabled-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .hero__products-pict {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 33px;
-
+  z-index: 10;
   @media screen and (min-width: 1200px) {
     gap: 14px;
   }
@@ -56,13 +155,41 @@
   }
 }
 
+.rotate-center {
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 1s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 .hero__products-text-wrapper {
   display: flex;
   flex-direction: column;
   width: 151px;
+  padding-bottom: 10px;
 
   @media screen and (min-width: 1200px) {
     width: 200px;
+    padding-bottom: 40px;
   }
 
   @media screen and (max-width: 767px) {
@@ -73,8 +200,7 @@
 .hero__products-text {
   font-weight: 400;
   line-height: 1.4;
-  margin-bottom: 27px;
-
+  margin-bottom: 22px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 12px;
     margin-bottom: 10px;
@@ -83,6 +209,113 @@
   color: $primary-light-color;
 }
 
+.hero__link-arrow {
+  display: flex;
+  width: 40px;
+
+  &:focus {
+    transform: scale(1.25, 1.5);
+  }
+}
+
 .hero__arrow {
   fill: $primary-light-color;
+  transition: color $transition;
+
+  &:hover {
+    transform: scale(1.25);
+  }
+
+  &:focus {
+    transform: scale(1.25, 1.5);
+  }
 }
+
+.hero__picture-ice {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  pointer-events: none;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    right: 36px;
+  }
+
+  @media screen and (max-width: 767px) {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+.hero__points {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: 70px;
+    background-image: url(../images/hero/points-sm.svg);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+    height: 68px;
+    background-image: url(../images/hero/points-md.svg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    height: 386px;
+    background-image: url(../images/hero/points-lg.svg);
+  }
+}
+// .hero__points {
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+
+//   @media screen and (max-width: 767px) {
+//     width: 100%;
+//     height: 70px;
+//     background-image: url(../images/hero/points-sm@1x.png);
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/hero/points-sm@2x.png);
+//     }
+//   }
+
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     width: 768px;
+//     height: 68px;
+//     background-image: url(../images/hero/points-md@1x.png);
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/hero/points-md@2x.png);
+//     }
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     width: 1200px;
+//     height: 386px;
+//     background-image: url(../images/hero/points-lg@1x.png);
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/hero/points-lg@2x.png);
+//     }
+//   }
+// }

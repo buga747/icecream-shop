@@ -1,0 +1,311 @@
+.products {
+    background-repeat: repeat-y;
+    background-size: cover;
+    object-fit: contain;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-image: url(../images/products/background/sm/1sm@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/products/background/sm/1sm@2x.png);
+            }
+
+    //tablet styles
+    @media screen and (min-width: 768px) {
+        padding-top: 61px;
+        padding-bottom: 82px;
+        background-image: url(../images/products/background/md/md@1x.png);
+        background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/products/background/md/md@2x.png);
+            background-repeat: no-repeat;
+            }
+    }
+
+    //desktop styles
+    @media screen and (min-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 66px;
+        background-image: url(../images/products/background/lg/lg@1x.png);
+        background-repeat: no-repeat;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/products/background/lg/lg@2x.png) ;
+                background-repeat: no-repeat;
+            }
+        }
+}
+
+.products__uppertitle {
+font-family: $main-font;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: calc(22 / 18);
+text-align: center;
+text-transform: uppercase;
+
+color: $primary-text-color;
+margin-bottom: 12px;
+margin-left: auto;
+margin-right: auto;
+
+//tablet styles
+@media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: calc(27 / 22);
+}
+
+//desktop styles
+@media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+    letter-spacing: 0.04em;
+}
+}
+
+.products__title {
+font-family: $secondary-font;
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: calc(38 / 30);
+
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: $primary-text-color;
+margin-bottom: 148px;
+margin-left: auto;
+margin-right: auto;
+
+@media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: calc(43 / 34);
+    margin-bottom: 200px;
+}
+
+//desktop styles
+@media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+    letter-spacing: 0.06em;
+    margin-bottom: 303px;
+}
+}
+
+.products__list {
+    //tablet styles
+    @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 16px;
+    justify-content: space-around;
+}
+
+//desktop styles
+@media screen and (min-width: 1200px) {
+    gap: 32px;
+}
+}
+
+.item__ice-cream {
+    margin-bottom: 164px;
+
+    //tablet styles
+    @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    }
+}
+
+.item__coffee {
+    margin-bottom: 164px;
+
+    //tablet styles
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        }
+}
+
+.products__block {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+    padding-bottom: 20px;
+
+    //tablet styles
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        height: 428px;
+        max-width: 224px;
+    }
+
+    //desktop styles
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        height: 536px;
+        max-width: 370px;
+    }
+}
+
+.products__ice-cream {
+    background-color: $product-1-bg-color;
+    position: relative;
+}
+
+.products__coffee {
+    background-color: $product-2-bg-color;
+    position: relative;
+}
+
+.products__milkshakes {
+    background-color: $product-3-bg-color;
+    position: relative;
+}
+
+.img__ice-cream {
+    max-width: 201px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    scale: 1.2;
+
+    //tablet styles
+    @media screen and (min-width: 768px) {
+        max-width: 200px;
+    }
+
+    //desktop styles
+    @media screen and (min-width: 1200px) {
+        max-width: 303px;
+    }
+}
+
+.img__coffee {
+    max-width: 201px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    scale: 1.2;
+
+    //tablet styles
+    @media screen and (min-width: 768px) {
+        max-width: 200px;
+    }
+
+    //desktop styles
+    @media screen and (min-width: 1200px) {
+        max-width: 303px;
+    }
+}
+
+.img__milkshakes {
+    max-width: 201px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    scale: 1.2;
+
+    //tablet styles
+    @media screen and (min-width: 768px) {
+        max-width: 200px;
+    }
+
+    //desktop styles
+    @media screen and (min-width: 1200px) {
+        max-width: 303px;
+    }
+}
+
+.products__name {
+    padding-top: 123px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: $primary-text-color;
+
+    //tablet styles
+    @media screen and (min-width: 768px) {
+        font-size: 22px;
+        line-height: calc(27 / 22);
+        padding-top: 108px;
+        }
+    
+    //desktop styles
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: calc(37 / 30);
+        padding-top: 166px;
+        margin-bottom: 65px;
+    }
+}
+
+.products__text{
+font-family: $main-font;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 176%;
+text-align: center;
+letter-spacing: 0.04em;
+color: $primary-text-color;
+margin-bottom: 90px;
+padding-left: 40px;
+padding-right: 40px;
+
+//tablet styles
+@media screen and (min-width: 768px) {
+margin-bottom: auto;
+}
+
+//desktop styles
+@media screen and (min-width: 1200px) {
+    font-size: 16px;
+}
+}
+
+.products__btn {
+    width: 40px;
+    display: flex;
+    border: none;
+    color: transparent;
+    margin-right: auto;
+    margin-left: auto;
+    background: none;
+
+    cursor: pointer;
+
+    &:focus {
+        transform: scale(1.25, 1.5);
+    }
+}
+
+.products__icon {
+    fill: $primary-text-color;
+    transition: color $transition;
+    &:hover {
+    transform: scale(1.25);
+}
+&:focus {
+    transform: scale(1.25, 1.5);
+}
+}
