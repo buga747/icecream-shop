@@ -246,11 +246,11 @@
     
             @keyframes rotateY {
                 0% {
-                transform: perspective(400px) rotateY(15deg);
+                transform: perspective(400px) rotateY(5deg);
                 }
             
                 100% {
-                transform: perspective(400px) rotateY(-15deg);
+                transform: perspective(400px) rotateY(-5deg);
                 }
             }
         }
