@@ -66,6 +66,7 @@
   display: block;
   border-radius: 10px;
   margin: 0 auto;
+  border: none;
 
   @include breakpoint-min(768px) {
     width: 448px;
