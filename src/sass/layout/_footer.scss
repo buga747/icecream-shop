@@ -1,5 +1,16 @@
 .footer {
   background-color: $section-background-color;
+  margin-top: -304px;
+
+
+  @media screen and (min-width:768px) {
+    margin-top: -264px;
+  }
+
+  @media screen and (min-width:1200px) {
+    margin-top: -1px;
+    padding-top: 50px;
+  }
 }
 
 .footer__group {
