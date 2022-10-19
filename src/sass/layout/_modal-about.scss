@@ -1,5 +1,6 @@
 .about-modal {
   width: 280px;
+  height: auto;
 
   @include breakpoint-min(768px) {
     padding: 32px 60px;
@@ -9,29 +10,35 @@
 
 .about-modal-btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 4px;
+  right: 4px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
-  transition: fill $transition, transform $transition;
+  transition: fill $transition, transform $transition,
+    background-color $transition;
 
   &:hover,
   &:focus {
     fill: $accent-color;
-    transform: rotate(360deg);
+    transform: rotate(90deg);
+    background-color: $icons-color;
   }
 
   @include breakpoint-min(768px) {
-    top: 20px;
-    right: 20px;
+    top: 16px;
+    right: 16px;
 
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
 
     & .about-modal-close {
       width: 20px;
@@ -49,6 +56,7 @@
   line-height: calc(24 / 16);
 
   @include breakpoint-min(768px) {
+    margin-bottom: 32px;
     font-size: 20px;
     line-height: calc(28 / 20);
   }
@@ -76,6 +84,7 @@
   color: $primary-text-color;
 
   @include breakpoint-min(768px) {
+    margin-top: 32px;
     width: 448px;
     font-size: 16px;
   }

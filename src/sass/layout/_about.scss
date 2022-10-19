@@ -5,6 +5,10 @@
   background-color: $section-background-color;
 }
 
+.about-container {
+  overflow: hidden;
+}
+
 .about-uppertitle {
   color: $primary-light-color;
 
@@ -52,7 +56,7 @@
 
 .about-thumb {
   padding: 22px 1px 0 1px;
-  margin: 0 auto 61px;
+  margin: 0 auto 62px;
 
   width: 278px;
   height: 278px;
@@ -63,14 +67,14 @@
 
   @include breakpoint-min($tablet) {
     margin-bottom: 26px;
-    padding: 23px 1px 0 1px;
+    padding: 26px 1px 0 1px;
     width: 335px;
     height: 330px;
     border-radius: 165.879px;
   }
 
   @include breakpoint-min($desktop) {
-    margin: 0 0 32px 0;
+    margin: 0 0 29px 0;
     padding: 39px 8px 0 2px;
     width: 500px;
     height: 500px;
