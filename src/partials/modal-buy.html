@@ -1,13 +1,14 @@
 <div class="backdrop is-hidden" id="buy-now-modal">
   <div class="modal modal-buy">
-    <form action="">
+    <button class="modal-buy__close" id="buy-now-modal-close" type="button">
+      <svg class="modal-buy__close-icon" width="16" height="16">
+        <use href="./images/icons/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-buy__title">Buy now</h2>
+    <form>
       <!-- close button start -->
-      <button class="modal-buy__close" id="buy-now-modal-close" type="button">
-        <svg class="modal-buy__close-icon" width="16" height="16">
-          <use href="./images/icons/icons.svg#modal-close"></use>
-        </svg>
-      </button>
-      <h2 class="modal-buy__title">Buy now</h2>
+
       <!-- close button end -->
 
       <!-- checkbox start -->
@@ -15,7 +16,6 @@
         <li class="modal-buy__item">
           <label>
             <input
-              visually-hidden
               class="modal-buy__checkbox visually-hidden"
               type="checkbox"
               name="product"
@@ -91,7 +91,7 @@
       <label>
         <input
           class="modal-buy__username"
-          type="username"
+          type="text"
           placeholder="Name"
           name="username"
           id="username"
