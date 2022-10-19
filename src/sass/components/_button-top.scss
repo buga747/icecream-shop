@@ -4,10 +4,10 @@
     width: 50px;
     height: 50px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 50%;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 15px;
+    right: 15px;
     transition: background-color .3s,
         opacity .5s, visibility .5s;
     opacity: 0;
@@ -17,16 +17,24 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width:1200px) {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        bottom: 30px;
+        right: 30px;
+    }
 }
 
 
 #button:hover {
     cursor: pointer;
-    background-color: rgb(147, 49, 114);
+    background-color: rgb(207, 88, 168);
 }
 
 #button:active {
-    background-color: rgb(85, 85, 85);
+    background-color: rgb(76, 85, 202);
 }
 
 #button.show {
