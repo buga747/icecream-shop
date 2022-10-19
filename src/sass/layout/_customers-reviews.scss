@@ -1,14 +1,13 @@
 .slick {
   margin-top: 80px;
-  outline: 1px solid tomato;
 
   @media screen and (min-width:768px) {
-      margin-top: 223px;
-    }
+    margin-top: 223px;
+  }
 
-        @media screen and (min-width:1200px) {
-          margin-top: 452px;
-        }
+  @media screen and (min-width:1200px) {
+    margin-top: 452px;
+  }
 }
 
 
@@ -17,7 +16,7 @@
   min-height: 256px;
   margin-left: auto;
   margin-right: auto;
-display: block;
+  display: block;
   background-color: $section-background-color;
   border-radius: 10px;
   font-size: 12px;
@@ -25,54 +24,54 @@ display: block;
   font-weight: 400;
   line-height: 2.55;
   text-align: center;
- padding: 34px 39px  ;
+  padding: 34px 39px;
   color: $primary-light-color;
   text-align: center;
   margin-top: 32px;
 
   @media screen and (min-width:768px) {
-        width: 705px;
-          min-height: 138px;
-          margin-left: auto;
-          margin-right: auto;
-        
-          background-color: $section-background-color;
-          border-radius: 24px;
-          font-size: 14px;
-          
-          font-weight: 500;
-          line-height: 1.86;
-          text-align: center;
-          padding: 29px 80px;
-          color: $primary-light-color;
-          text-align: center;
-          margin-top: 28px;
-    }
+    width: 705px;
+    min-height: 138px;
+    margin-left: auto;
+    margin-right: auto;
 
-    @media screen and (min-width:1200px) {
-      width: 968px;
-         background-color: $section-background-color;
-     
-      font-size: 16px;
-      font-family: $main-font;
-            text-align: center;
-      padding: 39px 73px;
-            margin-top: 32px;
-    }
+    background-color: $section-background-color;
+    border-radius: 24px;
+    font-size: 14px;
+
+    font-weight: 500;
+    line-height: 1.86;
+    text-align: center;
+    padding: 29px 80px;
+    color: $primary-light-color;
+    text-align: center;
+    margin-top: 28px;
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 968px;
+    background-color: $section-background-color;
+
+    font-size: 16px;
+    font-family: $main-font;
+    text-align: center;
+    padding: 39px 73px;
+    margin-top: 32px;
+  }
 
 }
 
 .reviewer-photo {
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 
 .reviewer-info {
   margin-top: 30px;
-font-family: $main-font;
+  font-family: $main-font;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.86;
@@ -80,26 +79,26 @@ font-family: $main-font;
   color: $primary-text-color;
 
   @media screen and (min-width:768px) {
-      margin-top: 32px;
-        font-family: $main-font;
-        font-size: 16px;
-        
-    }
+    margin-top: 32px;
+    font-family: $main-font;
+    font-size: 16px;
 
-    @media screen and (min-width:1200px) {
-    
-      font-family: $main-font;
-    
-      
-    }
+  }
+
+  @media screen and (min-width:1200px) {
+
+    font-family: $main-font;
+
+
+  }
 
 }
 
 
 
 .slick-dots li.slick-active button:before {
- color:$icons-color;
- font-size: 12px;
+  color: $icons-color;
+  font-size: 12px;
 }
 
 .slick-dots li button:before {
@@ -108,19 +107,19 @@ font-family: $main-font;
 }
 
 .slick-js .slick-initialized .slick-slider .slick-dotted {
-min-height: 485px;
+  min-height: 485px;
 }
 
 .slick-dots {
   bottom: -30px;
 
   @media screen and (min-width:768px) {
-  
-      bottom: -37px;
-        }
 
-                @media screen and (min-width:1200px) {
-        
-                  bottom: -37px;
-                }
+    bottom: -37px;
+  }
+
+  @media screen and (min-width:1200px) {
+
+    bottom: -37px;
+  }
 }
