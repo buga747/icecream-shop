@@ -2,7 +2,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
-    outline: 1px solid tomato;
+    // outline: 1px solid tomato;
 
     @include breakpoint-min($mobile) {
         width: 480px;
