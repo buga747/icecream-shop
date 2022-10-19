@@ -24,7 +24,7 @@
   }
 
   &__list {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       gap: 80px;
       display: flex;
       flex-direction: column;
@@ -60,7 +60,7 @@
   }
 
   &__milk {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -69,7 +69,7 @@
   }
 
   &__weight {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -78,7 +78,7 @@
   }
 
   &__ice {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -115,6 +115,24 @@
         (min-resolution: 2dppx) {
         background-image: url('../images/superiority/milk-@2x.png');
       }
+    }
+  }
+
+  &__milk::before,
+  :hover {
+    animation-name: cow-milk;
+    animation-duration: 3000ms;
+    animation-iteration-count: 1000;
+  }
+  @keyframes cow-milk {
+    0% {
+      background-color: yellow;
+    }
+    50% {
+      background-color: gold;
+    }
+    100% {
+      background-color: yellow;
     }
   }
 
@@ -165,19 +183,19 @@
   }
 
   &__milk::before {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 32px;
     }
   }
 
   &__weight::before {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 32px;
     }
   }
 
   &__ice::before {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 32px;
     }
   }
@@ -262,14 +280,14 @@
   }
 
   &__quality {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 36px;
       line-height: calc(42 / 36);
     }
   }
 
   &__text {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 12px;
       line-height: 170%;
     }
