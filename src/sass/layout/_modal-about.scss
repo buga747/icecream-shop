@@ -1,5 +1,6 @@
 .about-modal {
   width: 280px;
+  height: auto;
 
   @include breakpoint-min(768px) {
     padding: 32px 60px;
