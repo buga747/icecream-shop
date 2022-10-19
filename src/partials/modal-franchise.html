@@ -28,7 +28,9 @@
                 </label>
 
                 <label class="franchise-form__field">
-                    <input class="franchise-form__input" type="tel" name="user-phone" required
+                    <input class="franchise-form__input" type="tel" name="user-phone" 
+                           pattern="+[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                           required
                         placeholder="+38 099 999 99 99" />
                     <span class="franchise-form__label">Phone</span>
                 </label>
