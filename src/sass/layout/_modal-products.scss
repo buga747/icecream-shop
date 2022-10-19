@@ -104,6 +104,20 @@
 
   // Ингридиенты
 
+  .ingridients__title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ingridients__list {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color: $primary-text-color;
+  }
+
   // ДАННЫЕ КЛИЕНТА
   .clients-data {
     display: flex;
