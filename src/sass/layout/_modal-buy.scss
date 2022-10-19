@@ -68,8 +68,9 @@
         border: 2px solid;
         filter: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
         border-radius: 16px;
-    }
 
+
+    }
     // &__checkbox{
     //     display: none;
     // }
@@ -97,6 +98,14 @@
     &__ice-cream {
         border-color: #96AF8C;
         box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+        :focus-within .modal-buy__thumb{
+            outline: 2px solid red;
+        }
+    }
+
+    .modal-buy__checkbox:focus~.modal-buy__thumb{
+        outline: 2px solid black;
+        outline-offset: 2px solid black;
     }
 
     &__ice-coffee {
