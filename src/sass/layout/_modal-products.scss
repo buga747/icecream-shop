@@ -68,6 +68,18 @@
     letter-spacing: 0.04em;
     color: $primary-text-color;
   }
+  .ingredients-names {
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.17;
+    text-align: center;
+    color: $primary-text-color;
+    margin-top: 39px;
+    margin-bottom: 24px;
+  }
 
   .m-e {
     display: flex;
