@@ -1,0 +1,2 @@
+!function(){var e={openModalBtn:document.getElementById("buy-now-modal-open"),openModalBtnMobile:document.getElementById("buyNowModalOpenMobile"),closeModalBtn:document.getElementById("buy-now-modal-close"),modal:document.getElementById("buy-now-modal")};function n(){e.modal.classList.toggle("is-hidden")}document.getElementById("body"),e.openModalBtn.addEventListener("click",n),e.openModalBtnMobile.addEventListener("click",n),e.closeModalBtn.addEventListener("click",n)}();
+//# sourceMappingURL=index.a980c9db.js.map

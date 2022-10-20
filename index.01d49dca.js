@@ -1,0 +1,2 @@
+(()=>{const e={openModalBtn:document.getElementById("buy-now-modal-open"),openModalBtnMobile:document.getElementById("buyNowModalOpenMobile"),closeModalBtn:document.getElementById("buy-now-modal-close"),modal:document.getElementById("buy-now-modal")};document.getElementById("body");function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.openModalBtnMobile.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
+//# sourceMappingURL=index.01d49dca.js.map

@@ -1,0 +1,2 @@
+!function(){var e={openModalBtn:document.getElementById("product-modal-1-open"),closeModalBtn:document.getElementById("product-modal-1-close"),modal:document.getElementById("product-modal-1")};function d(){e.modal.classList.toggle("is-hidden")}document.getElementById("body"),e.openModalBtn.addEventListener("click",d),e.closeModalBtn.addEventListener("click",d)}();
+//# sourceMappingURL=index.bb42511c.js.map

@@ -1,0 +1,2 @@
+(()=>{const e={openModalBtn:document.getElementById("locations-modal-open"),closeModalBtn:document.getElementById("locations-modal-close"),modal:document.getElementById("locations-modal")};document.getElementById("body");function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
+//# sourceMappingURL=index.cbb04497.js.map
