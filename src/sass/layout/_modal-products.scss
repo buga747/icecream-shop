@@ -319,6 +319,9 @@
     // transition: transform 400ms linear, scale 300ms linear;
     transition: scale 400ms linear 200ms;
   }
+  .m-e:not(:last-child) {
+    margin-right: 20px;
+  }
 
   .m-e:hover,
   .m-e:focus {
