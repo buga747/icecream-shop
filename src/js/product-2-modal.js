@@ -10,14 +10,14 @@
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  refs.openModalBtn.addEventListener('click', locking);
-  refs.closeModalBtn.addEventListener('click', locking);
+  // refs.openModalBtn.addEventListener('click', locking);
+  // refs.closeModalBtn.addEventListener('click', locking);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
   }
 
-  function locking() {
-    body.classList.toggle('locked');
-  }
+  // function locking() {
+  //   body.classList.toggle('locked');
+  // }
 })();
