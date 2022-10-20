@@ -2,12 +2,11 @@
   background-color: $section-background-color;
   margin-top: -304px;
 
-
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-top: -264px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-top: -1px;
     padding-top: 50px;
   }
@@ -129,6 +128,7 @@
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  transition: color $transition, width $transition, height $transition;
 
   &:hover {
     color: $primary-light-color;
